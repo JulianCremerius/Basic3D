@@ -1,8 +1,25 @@
+<!--
+
+author: Julian Cremerius (FAU/SODa)
+
+comment: Dieser Kurs soll in die Grundprinzipien der photographischen 3D-Digitalisierung einführen.
+
+version: 0.1.0
+email: julian.cremerius@fau.de
+
+icon: ./res/soda.svg
+
+mode: Slides
+dark: true
+theme-color: yellow
+-->
+
+
 # Basics 3D
 
 ---
 
-<!-- style="display: block; float: none; width: 50%; margin-left: auto; margin-right: auto;" -->
+<!-- style="display: block; float: none; width: 80%; margin-left: auto; margin-right: auto;" -->
 ![Nike - Von Statue zum 3D Modell](res/nike_slow.gif)
 
 Willkommen zu unserer Basic-3D-Pipeline OER!
