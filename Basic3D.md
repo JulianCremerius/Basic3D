@@ -8,10 +8,14 @@ version: 0.1.0
 email: julian.cremerius@fau.de
 
 icon: ./res/soda.svg
+@@TODO - white text
 
 mode: Slides
+@@TODO - decide on format
+
 dark: true
-theme-color: yellow
+
+@@TODO - theme-color: yellow
 -->
 
 
@@ -24,20 +28,21 @@ theme-color: yellow
 
 Willkommen zu unserer Basic-3D-Pipeline OER!
 <br><br>
-Im Zuge dieses kleinen Tutorials wollen wir euch mit dem 3D-Digitalisierungsprozess in seiner einfachsten Form vertraut machen. 
+Im Zuge dieses kleinen Tutorials wollen wir euch mit dem 3D-Digitalisierungsprozess in seiner einfachsten Form und den grundlegenden Prinzipien vertraut machen. 
 <br><br>
-Es werden daher keinerlei Grundkenntnisse vorausgesetzt und bedarf auch keiner kostenpflichtiger Software.
-Die erzielten Resultate sind folglich entsprechend schlicht. Um die Qualität der Ergebnisse zu steigern, empfehlen wir modular und schrittweise die eingesetzten Mittel und Methoden aufzuwerten (Aufnahmesetup, Rekonstruktionssoftware, Nachbearbeitung).
+Es werden daher keinerlei Grundkenntnisse vorausgesetzt und bedarf auch keiner kostenpflichtiger Software.<br>
+Die erzielten Resultate zwar schnell erstaunliche Qualität erreichen, bleiben aber natürlich hinter denen professioneller Digitalisierung zurück.<br>
+Um die Qualität der Ergebnisse zu steigern, empfehlen wir modular und schrittweise die eingesetzten Mittel und Methoden aufzuwerten (Aufnahmesetup, Rekonstruktionssoftware, Nachbearbeitung).
 
 ## Einführung
 
 #### Was ist unser Ziel?
 
 Diese Lernressource ist offensichtlich nicht für Leute gedacht, die in ihrem Arbeitsalltag bereits erfolgreich und routiniert 3D-Digitalisate erschaffen.
-Wir hoffen an dieser Stelle all jene, die das Thema 3D-Digitalisierung zwar mit Interesse betrachten, aber vielleicht auch mit großem Respekt oder Unverständnis bisher umgehen, davon zu Überzeugen, dass der schwierigste Schritt der Erste ist. Um an das heranzuführen und zur 3D-Digitalisierung zu motivieren, versuch wir hier gemeinsam:
+Wir hoffen an dieser Stelle alle, die das Thema 3D-Digitalisierung zwar mit Interesse betrachten, aber vielleicht auch mit großem Respekt oder Unverständnis bisher umgehen, davon Überzeugen zu können, dass der schwierigste Schritt schon mit dem bloßen Anfangen geschafft ist. Um an das heranzuführen und zur 3D-Digitalisierung zu motivieren, versuchen wir hier gemeinsam:
 
 - Das Konzept und die Technik hinter der 3D-Digitalisierung mittels Photogrammetrie zu verstehen
-- Mit den grundlegenden Arbeitsschritten und Prozessen der Digitalisierung bekannt werden
+- Mit den grundlegenden Arbeitsschritten und Prozessen der Digitalisierung bekannt zu werden
 - Ansatzpunkt & Motivation zu bekommen um in Zukunft auch selber Photogrammetrie einzusetzen
 - Interesse wecken und Ausblicke geben, nicht nur zum Einsetzen, sondern auch zum Vertiefen und modularen Verbessern des eigenen Arbeitsprozesses
 
@@ -49,19 +54,22 @@ die für erste Versuche & Hobbymäßige Aufnahmen nicht vonnöten sind, im Über
 Der Prozess ist der Übersicht halber in drei Arbeitsschritte aufgeteilt - Die Aufnahme, die Nachbearbeitung & die Publikation des Modells.
 Als Konzept für den weiterführenden Einstieg in die professionellen Digitalisierungsarbeit empfehlen wir, die einzelnen Arbeitsschritte mit steigendem Qualitätsanspruch modular auszubauen und die verwendete Soft- & Hardware schrittweise durch hochwertigere Alternativen zu ersetzen. Der Digitalisierungsprozess kann mit nahezu unbegrenztem Aufwand und Mitteleinsatz durchgeführt werden, oft ist gewünschte oder notwendige Qualität aber bereits mit erstaunlich moderatem Einsatz erreichbar.
 
-#### Wieso genau PolyCam & Sketchfab?
+#### Wieso genau PolyCam & Sketchfab? (Disclaimer)
 
-Wir verwenden im Laufe des Tutorials sowohl die Smartphone-App **Polycam** als auch den Webservice **Sketchfab**.<br>
-Während beiderlei Software kostenpflichtige Features hinter Abonnements zurückhalt empfehlen und verlangen wir in diesem Tutorial ***nicht*** den Abschluss eines solchen Abonnements - alle im Folgenden notwendigen Features stehen vollkommen kostenfrei zur Verfügung und verlangen lediglich die Erstellung eines jeweiligen Benutzeraccounts.<br>
-Zusätzlich präsentieren und besprechen wir zu beiden Programmen Alternativen, die bei Bedarf ebenfalls eingesetzt werden können - einige Arbeitsschritte unterscheiden sich in diesem Falle natürlich.
+Wir verwenden im Laufe des Tutorials sowohl die Smartphone-App [**Polycam**](https://poly.cam) als auch den Webservice [**Sketchfab**](https://sketchfab.com).<br><br>
+Während beiderlei Software kostenpflichtige Features hinter Abonnements zurückhalten, empfehlen und verlangen wir in diesem Tutorial ***nicht*** den Abschluss eines solchen Abonnements - alle im Folgenden notwendigen Features stehen vollkommen kostenfrei zur Verfügung und verlangen lediglich die Erstellung eines jeweiligen Benutzeraccounts.<br>
+Es besteht keine Kooperation mit den Diensten und dies stellt weiterhin keine kommerzielle Empfehlung der Dienste unsererseits dar. Die Festlegung auf spezifische Dienste dient einzig und allein der konsistenten Darstellung von spezifischen Use-Case Beispielen.<br>
+Aus diesem Grund präsentieren und besprechen wir zu beiden Programmen Alternativen, die bei Bedarf ebenfalls eingesetzt werden können - einige Arbeitsschritte unterscheiden sich in diesem Falle natürlich.
+
+TODO: scale & formatting
+![Polycam Logo](res/Polycam_logo.svg) 
+![Sketchfab Logo](res/sketchfab-logo-text.png)
 
 Grund für die Wahl der betreffenden Software ist unser primäres Ziel der Bekanntmachen & Vorstellung der Methodik.<br>
 Da es sich dementsprechend um ein Einsteiger- und Ausprobier-Tutorial handelt sollen keine Kosten & minimaler Aufwand hervorgerufen werden (reine Open-Source Software ist häufig Einarbeitunsintensiv).
 Um weiterhin keine Anforderungen im Bezug auf teure & leistungsfähige Hardware zu stellen, beschränken wir uns auf Smartphone-Apps & Web-Apps, die auf jedem mobilen Gerät verwendet werden können.
 <br>
 Wir hoffen, durch unsere Wahl einen reibungslosen Ablauf und schnelle Erfolge bereiten zu können, unterstützen aber jederzeit die Wahl alternativer Software.
-
-
 
 
 ## Part 1 - Aufnahme
