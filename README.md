@@ -1,5 +1,5 @@
 This Repo deploys a LiaScript-based Open Educational Ressource for public use.
-The ressource is best viewed via the LiaScript-Renderer.
+The resource is best viewed via the LiaScript-Renderer.
 
 The course in it's current state is still work-in-progress!
 
