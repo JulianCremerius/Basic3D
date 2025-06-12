@@ -88,16 +88,29 @@ Wie aus der Methoden-Bezeichnung bereits hervorgeht, ist für die *SfM*-Aufnahme
 Es handelt sich im Grunde also um klassische Objektphotographie, die aus mehreren Blickwinkeln wiederholt wird, bis eine ausreichende Abdeckung des Objekts aus allen Richtung erreicht ist.
 
 {{1-2}}
-![Photographie-Setup](res/photography.png)
-![Photogrammetrie-Setup](res/photogrammetry.png)
+<div>
+    <img src="res/photography.svg" height="200" width="200"/>
+    <p>This is image 1</p>
+    <img src="res/setup_photo.svg" height="200" width="200"/>
+    <p>This is image 2</p>
+</div>
+
+
+{{3}}
+<!-- style="display: block; float: none; width: 25%; margin-left: auto; margin-right: auto;" -->
+![Photographie-Setup](res/photography.svg)
+
+{{3}}
+<!-- style="display: block; float: none; width: 25%; margin-left: auto; margin-right: auto;" -->
+![Photogrammetrie-Setup](res/setup_photo.svg)
 
 {{2-3}}
 Bevor das Modell selber aber berechnet werden kann, fehlt an dieser Stelle noch eine wichtige Information - In welchem räumlichen Verhältnis stehen die einzelnen Kameraperspektiven zueinander?
 Da entweder die Kamera oder das Objekt zwischen den Aufnahmen bewegt werden muss und eine technische Messung der Bewegungen häufig nicht akkurat genug ist, wird versucht diese räumlichen Verhältnisse aus den Bildern selbst zu bestimmen.
 
 {{2-3}}
-![Triangulations-Problem](res/triangulation_problem.png)
-![Triangulations-Lösung](res/triangulation_solution.png)
+![Triangulations-Problem](res/triangulation_photo_problem.svg)
+![Triangulations-Lösung](res/triangulation_photo.svg)
 
 {{3-4}}
 Für diese Berechnung ist es notwendig, visuelle *Features* (= Merkmale) der abgebildeten Szene in einer Vielzahl verschiedener Bilder wiederzuerkennen. Hier kommen daher sogenannte *Feature Detection*-Algorithmen zum Einsatz, insbesondere *SIFT* (= *Scale-invariant feature transform*, optimiert für Wiedererkennung von Merkmalen trotz verschiedener Größen/Rotation/Belichtung) oder *SURF* (= *Sped-up robust features*, ein Kompromiss zwischen schnellerer Laufzeit und robusten Ergebnissen). Das Ergebnis dieser *Feature Detection* sieht wie folgt aus:
