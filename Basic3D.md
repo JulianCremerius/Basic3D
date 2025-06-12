@@ -13,9 +13,15 @@ icon: ./res/soda.svg
 mode: Slides
 @@TODO - decide on format
 
-dark: true
+dark: false
 
-@@TODO - theme-color: yellow
+theme-color: yellow
+
+T itel
+U rheber
+L lizenz
+L izenzlink
+U rsprung(Link)
 -->
 
 
