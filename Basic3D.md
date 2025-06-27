@@ -7,21 +7,16 @@ comment: Dieser Kurs soll in die Grundprinzipien der photographischen 3D-Digital
 version: 0.1.0
 email: julian.cremerius@fau.de
 
-icon: ./res/soda.svg
-@@TODO - white text
+icon: ./res/soda.png
+
 
 mode: Slides
-@@TODO - decide on format
 
 dark: false
 
 theme-color: yellow
 
-T itel
-U rheber
-L lizenz
-L izenzlink
-U rsprung(Link)
+
 -->
 
 
@@ -62,20 +57,24 @@ Als Konzept für den weiterführenden Einstieg in die professionellen Digitalisi
 
 #### Wieso genau PolyCam & Sketchfab? (Disclaimer)
 
-Wir verwenden im Laufe des Tutorials sowohl die Smartphone-App [**Polycam**](https://poly.cam) als auch den Webservice [**Sketchfab**](https://sketchfab.com).<br><br>
-Während beiderlei Software kostenpflichtige Features hinter Abonnements zurückhalten, empfehlen und verlangen wir in diesem Tutorial ***nicht*** den Abschluss eines solchen Abonnements - alle im Folgenden notwendigen Features stehen vollkommen kostenfrei zur Verfügung und verlangen lediglich die Erstellung eines jeweiligen Benutzeraccounts.<br>
-Es besteht keine Kooperation mit den Diensten und dies stellt weiterhin keine kommerzielle Empfehlung der Dienste unsererseits dar. Die Festlegung auf spezifische Dienste dient einzig und allein der konsistenten Darstellung von spezifischen Use-Case Beispielen.<br>
+Wir verwenden im Laufe des Tutorials sowohl die Smartphone-App [**Polycam**](https://poly.cam) als auch den Webservice [**Sketchfab**](https://sketchfab.com). <img src="res/Polycam_logo.svg" alt="" style="float:right;width:33%"><br><br>
+Während beiderlei Software kostenpflichtige Features hinter Abonnements zurückhalten, empfehlen und verlangen wir in diesem Tutorial ***nicht*** den Abschluss eines solchen Abonnements - alle im Folgenden notwendigen Features stehen vollkommen kostenfrei zur Verfügung und verlangen lediglich die Erstellung eines jeweiligen Benutzeraccounts.<br> 
 Aus diesem Grund präsentieren und besprechen wir zu beiden Programmen Alternativen, die bei Bedarf ebenfalls eingesetzt werden können - einige Arbeitsschritte unterscheiden sich in diesem Falle natürlich.
 
-TODO: scale & formatting
-![Polycam Logo](res/Polycam_logo.svg) 
-![Sketchfab Logo](res/sketchfab-logo-text.png)
 
-Grund für die Wahl der betreffenden Software ist unser primäres Ziel der Bekanntmachen & Vorstellung der Methodik.<br>
+
+
+
+
+
+Es besteht keine Kooperation mit den Diensten und dies stellt weiterhin keine kommerzielle Empfehlung der Dienste unsererseits dar. Die Festlegung auf spezifische Dienste dient einzig und allein der konsistenten Darstellung von spezifischen Use-Case Beispielen.<br> <img src="res/sketchfab-logo-text.png" alt="" style="float:right;width:30%">
+Grund für die Wahl der betreffenden Software ist unser primäres Ziel der Bekanntmachen & Vorstellung der Methodik.<br> 
 Da es sich dementsprechend um ein Einsteiger- und Ausprobier-Tutorial handelt sollen keine Kosten & minimaler Aufwand hervorgerufen werden (reine Open-Source Software ist häufig Einarbeitunsintensiv).
 Um weiterhin keine Anforderungen im Bezug auf teure & leistungsfähige Hardware zu stellen, beschränken wir uns auf Smartphone-Apps & Web-Apps, die auf jedem mobilen Gerät verwendet werden können.
-<br>
+<br> 
 Wir hoffen, durch unsere Wahl einen reibungslosen Ablauf und schnelle Erfolge bereiten zu können, unterstützen aber jederzeit die Wahl alternativer Software.
+
+
 
 
 ## Part 1 - Aufnahme
@@ -83,50 +82,43 @@ Wir hoffen, durch unsere Wahl einen reibungslosen Ablauf und schnelle Erfolge be
 #### Kleiner Theorie-Einblick
 
 {{0-1}}
-Hinter jeder herkömmlichen Photogrammetrie-Software versteckt sich die sogenannter *Structure-from-Motion* Methode.
-Im Folgenden geben wir einen kleinen Überblick über die Arbeitsweise dieses Algorithmus - ein tieferes technisches Verständnis der Methodik ist für die 3D-Modell-Aufnahme zwar nicht zwingend notwendig, aber kann helfen, Fehler & Fehlerquellen bei der Anwendung schnell zu identifizieren und zu vermeiden.
+Hinter jeder herkömmlichen Photogrammetrie-Software versteckt sich die sogenannte *Structure-from-Motion*  Methode.
+Im Folgenden geben wir einen kleinen Überblick über die grundlegende Algorithmik - ein tieferes technisches Verständnis der Methodik ist für die 3D-Modell-Aufnahme zwar nicht zwingend notwendig, aber kann oft helfen, Fehler und entsprechende Fehlerquellen bei der Anwendung schnell zu identifizieren und zu vermeiden.
 <br><br>
 *Structure-from-Motion* (*SfM*), also 'Struktur aus Bewegung', beziehungsweise etwas freier übersetzt - 'Formerkennung durch Betrachtung aus verschiedenen Perspektiven' bezeichnet das allgemeine Konzept, die 3-dimensionale Form & Geometrie eines Objekts auf Basis mehrerer 2-dimensionaler Beobachtungen herauszufinden bzw. zu berechnen. In der *Computer Vision*-Forschung hat sich hierfür ein ganz bestimmter Prozess etabliert, den wir uns nun genauer anschauen wollen.
 
 
 {{1-2}}
 Wie aus der Methoden-Bezeichnung bereits hervorgeht, ist für die *SfM*-Aufnahme alse eine Reihe von regulären 2D-Fotoaufnahmen notwendig.
-Es handelt sich im Grunde also um klassische Objektphotographie, die aus mehreren Blickwinkeln wiederholt wird, bis eine ausreichende Abdeckung des Objekts aus allen Richtung erreicht ist.
+Es handelt sich im Grunde um klassische Objektphotographie, die aus mehreren Blickwinkeln wiederholt wird, bis eine ausreichende Abdeckung des Objekts aus allen Richtung erreicht ist. (Die Fotografischen Standards & Anforderungen unterscheiden sich jedoch etwas von denen der klassischen Objektphotographie.) <br><br><br>
 
 {{1-2}}
 <div>
-    <img src="res/photography.svg" height="200" width="200"/>
-    <p>This is image 1</p>
-    <img src="res/setup_photo.svg" height="200" width="200"/>
-    <p>This is image 2</p>
+    <img src="res/photography.svg" style="float:left;width:40%;height:400px"/>
+    <img src="res/setup_photo.svg" style="float:right;width:40%;height:400px"/>
 </div>
-
-
-{{3}}
-<!-- style="display: block; float: none; width: 25%; margin-left: auto; margin-right: auto;" -->
-![Photographie-Setup](res/photography.svg)
-
-{{3}}
-<!-- style="display: block; float: none; width: 25%; margin-left: auto; margin-right: auto;" -->
-![Photogrammetrie-Setup](res/setup_photo.svg)
 
 {{2-3}}
 Bevor das Modell selber aber berechnet werden kann, fehlt an dieser Stelle noch eine wichtige Information - In welchem räumlichen Verhältnis stehen die einzelnen Kameraperspektiven zueinander?
-Da entweder die Kamera oder das Objekt zwischen den Aufnahmen bewegt werden muss und eine technische Messung der Bewegungen häufig nicht akkurat genug ist, wird versucht diese räumlichen Verhältnisse aus den Bildern selbst zu bestimmen.
+Da entweder die Kamera oder das Objekt zwischen den Aufnahmen bewegt werden muss und eine technische Messung der Bewegungen häufig nicht akkurat genug ist, wird versucht diese räumlichen Verhältnisse aus den Bildern selbst zu bestimmen. <br><br><br>
 
 {{2-3}}
-![Triangulations-Problem](res/triangulation_photo_problem.svg)
-![Triangulations-Lösung](res/triangulation_photo.svg)
+<div>
+    <img src="res/triangulation_photo_problem.svg" alt="Problemstellung der Photogrammetrie" style="float:left;width:40%;height:400px"/>
+    <img src="res/triangulation_photo.svg" alt="Lösungsansatz der Photogrammetrie" style="float:right;width:40%;height:400px"/>
+</div>
 
 {{3-4}}
-Für diese Berechnung ist es notwendig, visuelle *Features* (= Merkmale) der abgebildeten Szene in einer Vielzahl verschiedener Bilder wiederzuerkennen. Hier kommen daher sogenannte *Feature Detection*-Algorithmen zum Einsatz, insbesondere *SIFT* (= *Scale-invariant feature transform*, optimiert für Wiedererkennung von Merkmalen trotz verschiedener Größen/Rotation/Belichtung) oder *SURF* (= *Sped-up robust features*, ein Kompromiss zwischen schnellerer Laufzeit und robusten Ergebnissen). Das Ergebnis dieser *Feature Detection* sieht wie folgt aus:
+Für diese Berechnung ist es notwendig, visuelle *Features* (= Merkmale) der abgebildeten Szene in einer Vielzahl verschiedener Bilder wiederzuerkennen. Hier kommen daher sogenannte *Feature Detection*-Algorithmen zum Einsatz, insbesondere *SIFT* (= *Scale-invariant feature transform*, optimiert für Wiedererkennung von Merkmalen trotz verschiedener Größen/Rotation/Belichtung) oder *SURF* (= *Sped-up robust features*, ein Kompromiss zwischen schnellerer Laufzeit und robusten Ergebnissen). Das Ergebnis dieser *Feature Detection* sieht wie folgt aus: <br><br><br>
 
 {{3-4}}
-![SIFT Feature Detection (1)](res/features_1.png)
-![SIFT Feature Detection (2)](res/features_2.png)
+<div>
+    <img src="res/features_1.png" alt="SIFT Feature Detection (Bsp 1)" style="float:left;width:48%;height:400px"/>
+    <img src="res/features_2.png" alt="SIFT Feature Detection (Bsp 2)" style="float:right;width:48%;height:400px"/>
+</div>
 
 {{4-5}}
-Da all diese *Features* aufgrund ihres hohen Wiedererkennungswertes ausgesucht wurden, ist nun ein *Feature Matching* (= Merkmalsabgleich) möglich, wobei zu allen *Features* eines Bildes korrespondierende 'Partner'-*Features* in anderen Bildern gesucht werden.
+Da all diese *Features* aufgrund ihres hohen Wiedererkennungswertes ausgesucht wurden, ist nun ein *Feature Matching* (= Merkmalsabgleich) möglich, wobei zu allen *Features* eines Bildes korrespondierende 'Partner'-*Features* in anderen Bildern gesucht werden. <br><br><br><br><br>
 
 {{4-5}}
 ![SIFT Feature Matching](res/matching.png)
@@ -157,11 +149,13 @@ Wenn alle Bilder noch einmal durchgegangen wurden, erhalten wir die *Dense Point
 {{8-9}}
 Die Verwendung von Punktwolken zur Geometriedarstellung hat allerdings diverse Nachteile und wird von vieler Software und auch Hardware nicht effizient oder auch garnicht unterstützt.
 Daher ist häufig die Umrechnung zu einem *(Polygon) Mesh* (= Polygonnetz, üblichste 3D-Geometriedarstellung) wünschenswert, viele Photogrammetrie-Programme führen diesen Schritt auch automatisch mit aus.
-Nachdem das *Mesh* berechnet wurde und die Texturen darauf projiziert wurden, erhalten wir schließlich das Endresultat der Photogrammetrie:
+Nachdem das *Mesh* berechnet wurde und die Texturen darauf projiziert wurden, erhalten wir schließlich das Endresultat der Photogrammetrie: <br><br><br>
 
 {{8-9}}
-![Berechnung des *Polygon Mesh*](res/mesh.png)
-![Projektion der Farbtextur auf das *Mesh*](res/textures.png)
+<div>
+    <img src="res/mesh.png" alt="Berechnung des *Polygon Mesh*" style="float:left;width:48%;height:400px"/>
+    <img src="res/textures.png" alt="Projektion der Farbtextur auf das *Mesh*" style="float:right;width:48%;height:400px"/>
+</div>
 
 #### Vorbereitung
 
@@ -172,12 +166,12 @@ Setup einer Aufnahme-App
 {{0-1}}
 Bevor wir uns mit der 3D-Aufnahme selber beschäftigen können, braucht es selbstverständlich ein Aufnahme-Setup. <br>
 Im Falle der Photogrammetrie kann so ein Aufnahme-Setup zwar fast beliebig aufwendig und teuer werden (DSLR Kamera, Studio-Beleuchtung, Polfilter, mech. Drehteller, etc), aber zum Glück auch fast beliebig schlicht gehalten werden. <br>
-Die einzige unabdingbare Voraussetzung ist eine Kamera - über die bereits jedes heutige Smartphone verfügt!
+Die einzige unabdingbare Voraussetzung ist eine Kamera - über die bereits jedes heutige Smartphone verfügt.
 <br><br>
 Wir könnten also direkt anfangen und eine Reihe Photos mit dem Smarthphone machen, die wir dann später an eine Photogrammetrie-Software (wie z.B. **MetaShape**, **RealityCapture**) weitergeben, um uns ein Modell zu berechnen.<br>
 Inzwischen gibt es allerdings auch viele benutzerfreundliche, Smartphone-basierte Photogrammetrie-Apps, die den ganzen Prozess von Aufnahme bis zum (nachbearbeiteten) Modell integrieren.
 <br><br>
-In dieser Demo verwenden wir daher solch eine App, **Polycam**, aber auch **RealityScan**, **KIRI Engine** oder **Scaniverse** bieten vergleichbare Alternativen mit kleineren Unterschieden in Verfügbarkeit von Features, Qualität und Kostenmodell. 
+In dieser Demo verwenden wir daher solch eine App, **Polycam**. Aber auch **RealityScan**, **KIRI Engine** oder **Scaniverse** stehen hier als vergleichbare Alternativen mit kleineren Unterschieden in Verfügbarkeit von Features, Qualität und Kostenmodell zur Verfügung. 
 Alle dieser Optionen sind kostenlos benutzbar, nachdem die Berechnung der 3D-Modelle aber erheblichen Rechenaufwand für den Anbieter erzeugt besteht oft eine Limitation der kostenlosen Aufnahmen, eine Obergrenze für die Anzahl an Fotos pro Aufnahme, oder begrenzte Export-Dateiformate, etc.
 <br><br>
 Alle Apps können je nach Smartphone über den Google Play Store oder den Apple App Store installiert werden.
