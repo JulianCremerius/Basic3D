@@ -232,7 +232,7 @@ Eine leergeräumte Tischplatte reicht vorerst vollkommen als Hinter- bzw. Unterg
 
   <div style="float:right;width:15%;margin: 5px 20px 20px 0px;">
     <img src="res/poly_start.jpg" alt="Der Aufnahmeprozess" style=""/>
-    <p style="text-align:center"> PLATZHALTER - TODO: replace with capturing gif </p>
+    <p style="text-align:center"> *PLATZHALTER für Capturing-gif* </p>
   </div>
 
 <p style="text-align:center"> Wie nehme ich auf?
@@ -248,6 +248,8 @@ Eine leergeräumte Tischplatte reicht vorerst vollkommen als Hinter- bzw. Unterg
   Um die Abdeckung weiterhin zu verbessern werden diese Umrundungen auf verschiedenen Höhen wiederholt (min. 2-3 mal; z.B. eine Umrundung je auf Augenhöhe/Brusthöhe/Hüfthöhe, angepasst an Objekt- und Tischgröße natürlich).
   <br>
   Bei einfachen Objekten ist eine Gesamtaufnahme von ca. 40-50 Bildern (2 Ringe zu je 20-25 Bildern) bereits ein zuverlässiges Mindestmaß, spätestens 3-4 Ringe zu je 30-40 Bildern sind in den allermeisten Fällen vollkommen ausreichend.
+
+  <img src="res/sfm.gif" alt="klassische ringweise Aufnahmestrategie">
 
 </div>
 
