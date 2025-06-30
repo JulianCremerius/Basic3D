@@ -407,16 +407,16 @@ Aufgrund der Popularität von **Sketchfab**, und da neue **kompakkt**-Nutzer die
 
 Auch Sketchfab erwartet vor der Nutzung wieder eine kostenlose Registrierung von seinen Nutzern. Nach Mail-Verifikation, optionaler Profileinrichtung und Wahl des Abonnements (kein kostenpflichtiges Abo notwendig!) kann auch schon direkt losgelegt werden. Nach Wahl der **Upload**-Option kann denkbar einfach über den Dateibrowser oder direktes Drag-and-Drop das gewünschte 3D-Modell ausgewählt werden.
 
-![Image](res/sketchfab_uploading.gif)
+![Image](res/sketchfab_upload.gif)
 
 Nach Auswahl der Datei öffnet sich direkt das Bearbeitungsmenü des neuen Eintrags, bis das Modell selbst geladen ist und testweise betrachtet werden kann braucht es noch einen Moment Geduld.
 
-![Image](res/sketchfab_processing.gif)
+![Image](res/sketchfab_pick_file.gif)
 
 Ist das Modell fertig geladen, kann nun es nun auch über das kleine Viewer-Fenster betrachtet werden oder direkt über die Option **Edit 3D Settings** nachmals bearbeitet werden.
 Da **Sketchfab** einen anderen *Renderer* (= 3D-Darstellungsprogramm) als **Polycam** verwendet, sehen viele Objekte erstmal anders aus. Standartmäßig wird die Beleuchtung hier einem industriellen Innenraum nachempfunden, wem dies nicht gefällt, der kann die Beleuchtung entweder manuell nach Wunsch einstellen (Lampen-Symbol), oder auf eine Beleuchtungssimulation verzichten und durch die **Shadeless**-Option die ungefilterte Darstellung der rekonstruierten Objektfarben erzwingen.
 
-![Image](res/sketchfab_shadeless.gif)
+![Image](res/sketchfab_lighting.gif)
 
 Ist die Sichtbarkeit durch den Hintergrund behindert, kann auch dieser hier angepasst werden, sowie ein vorteilhafte initiale Kameraposition definiert werden und viele weitere Änderungen, um das Objekt von seiner besten Seite zu präsentieren. 
 Um das Objekt rein zur interessierten Betrachtung zu Veröffentlichen ist an dieser Stelle aber auch kein großer Aufwand erforderlich.
@@ -424,7 +424,7 @@ Um das Objekt rein zur interessierten Betrachtung zu Veröffentlichen ist an die
 Relevante Einstellungen sind weiterhin die Sichtbarkeit (Bei kostenfreier Nutzung zwangsweise "öffentlich") und ob anderen Nutzern die Möglichkeit zum Download des Modells gegeben werden soll sowie die entsprechende Lizenzierung.
 Nach Wahl passenden Titels und einer (optionalen) kurzen Beschreibung kann das Modell dann auch schon mit einem Klick auf **Publish** veröffentlicht werden!
 
-![Image](res/sketchfab_publishing.gif)
+![Image](res/sketchfab_publish.gif)
 
 Das fertige Modell ist ab sofort öffentlich auf **Sketchfab** verfügbar und kann von allen Interessierten betrachtet werden, und je nach Freigabe auch heruntergeladen und weiterverwendet werden.
 <br><br><br>
