@@ -216,53 +216,99 @@ Der wichtigste Umgebungsfaktor für die Aufnahme besteht in der Beleuchtung unse
 Eine leergeräumte Tischplatte reicht vorerst vollkommen als Hinter- bzw. Untergrund für die Aufnahme. Stark gefüllte & bunte Hintergründe können in manchen Fällen zur Fehlerquelle werden (Führt zu vielen zusätzlichen Features im Hintergrund -> Gut für die Orientierung der Kameras, kann aber die Objektrekonstruktion stören)
 
 {{1}}
-TODO: image of setup 
+![Image](res/capturing_setup.png)
 
 #### Capturing - How to?
+<br><br>
 
-Wie nehme ich auf?
-===
 
-Ist alles vorbereitet kann es nun an die eigentliche Aufnahme gehen.
-<br>
-Öffnet man **Polycam**, wird man direkt mit dem Aufnahme-Interface begrüßt, bei manchen anderen Apps muss manuell eine **Neue Aufnahme/New Capture** geöfnet werden.
-Die einzige verfügbare Einstellung ist hier die Auswahl zwischen der Aufnahme einzelner Photos ('Manual') und der "Video"-Aufnahme ('Auto'). Um die Aufnahme verwackelter Bilder während der Bewegung bzw Umpositionierung zu vermeiden empfiehlt sich hier die manuelle Aufnahme.
 
-TODO: image polycam startup
+<div style="overflow:auto">
 
-Das einfachste "Aufnahmemuster", um eine gute Abdeckung zu erreichen ist das kreisförmige Umrunden des Objekts bei regelmäßigem Fotografieren, beispielsweise alle 10-20° (~20 Bilder/Umrundung) oder frei Hand nach jedem "Seitwärtsschritt"(siehe Abbildung).
-Um die Abdeckung weiterhin zu verbessern werden diese Umrundungen auf verschiedenen Höhen wiederholt (min. 2-3 mal; z.B. eine Umrundung je auf Augenhöhe/Brusthöhe/Hüfthöhe, angepasst an Objekt- und Tischgröße natürlich).
-<br>
-Bei einfachen Objekten ist eine Gesamtaufnahme von ca. 40-50 Bildern (2 Ringe zu je 20-25 Bildern) bereits ein zuverlässiges Mindestmaß, spätestens 3-4 Ringe zu je 30-40 Bildern sind in den allermeisten Fällen vollkommen ausreichend.
+  <div style="float:left;width:15%;margin: 5px 20px 20px 0px;">
+    <img src="res/poly_start.jpg" alt="Start-Ansicht von Polycam" style=""/>
+    <p style="text-align:center"> *Start-Ansicht von Polycam* </p>
+  </div>
 
-TODO: capturing gif
+  <div style="float:right;width:15%;margin: 5px 20px 20px 0px;">
+    <img src="res/poly_start.jpg" alt="Der Aufnahmeprozess" style=""/>
+    <p style="text-align:center"> PLATZHALTER - TODO: replace with capturing gif </p>
+  </div>
 
-Probleme?
-===
+<p style="text-align:center"> Wie nehme ich auf?
+=== </p>
 
-**Ich habe nicht genug Platz, um das Objekt zu umrunden?**
-<br>
-Fast alle Photogrammetrie-Apps unterstützen das sogenannte *Object Masking*, hierbei wird versucht das "Zielobjekt" der Aufnahme zu identifizieren und nachfolgend all **Features** abseits des Objektes ignoriert. Dadurch besteht praktisch kein Unterschied mehr zwischem einem "Herumlaufen" um das Objekt und einer schrittweisen Rotation des Objektes selbst. Achtung - bei weichen, deformierbaren Objekten besteht die Gefahr das Objekt zu verformen, hier empfiehlt sich ein Drehteller oder anderweitige Unterlage, mittels der das Objekt gedreht werden kann.
+  Ist alles vorbereitet kann es nun an die eigentliche Aufnahme gehen.
+  <br>
+  Öffnet man **Polycam**, wird man direkt mit dem Aufnahme-Interface begrüßt, bei manchen anderen Apps muss manuell eine **Neue Aufnahme/New Capture** geöfnet werden.
+  Die einzige verfügbare Einstellung ist hier die Auswahl zwischen der Aufnahme einzelner Photos ('Manual') und der "Video"-Aufnahme ('Auto'). Um die Aufnahme verwackelter Bilder während der Bewegung bzw Umpositionierung zu vermeiden empfiehlt sich hier die manuelle Aufnahme.
 
-**So wird ja die Unterseite des Objektes garnicht gesehen!**
-<br>
-Richtig, auch hier kann aber das *Object Masking* helfen. Solide Objekte können dabei beliebig umgedreht, hingelegt und rotiert werden, ohne die Rekonstruktion zu beeinträchtigen. Dadurch kann auch die Unterseite mit aufgenommen werden. Dies gestaltet sich bei deformierbaren Objekten jedoch schwierig, Option ist hier das Aufhängen oder anderweitige Suspendieren in der Luft, um auch Fotoringe von unterhalb aufnehmen zu können.
 
-TODO: images capturing w/o masking
+  Das einfachste "Aufnahmemuster", um eine gute Abdeckung zu erreichen ist das kreisförmige Umrunden des Objekts bei regelmäßigem Fotografieren, beispielsweise alle 10-20° (~20 Bilder/Umrundung) oder frei Hand nach jedem "Seitwärtsschritt"(siehe Abbildung).
+  Um die Abdeckung weiterhin zu verbessern werden diese Umrundungen auf verschiedenen Höhen wiederholt (min. 2-3 mal; z.B. eine Umrundung je auf Augenhöhe/Brusthöhe/Hüfthöhe, angepasst an Objekt- und Tischgröße natürlich).
+  <br>
+  Bei einfachen Objekten ist eine Gesamtaufnahme von ca. 40-50 Bildern (2 Ringe zu je 20-25 Bildern) bereits ein zuverlässiges Mindestmaß, spätestens 3-4 Ringe zu je 30-40 Bildern sind in den allermeisten Fällen vollkommen ausreichend.
 
-TODO: images capturing w   masking
+</div>
 
-Alles fertig?
-===
+<br><br>
+
+<div style="overflow:auto;">
+
+<p style="text-align:center"> Probleme?
+=== </p>
+
+  **Ich habe nicht genug Platz, um das Objekt zu umrunden?**
+  <br>
+  Fast alle Photogrammetrie-Apps unterstützen das sogenannte *Object Masking*, hierbei wird versucht das "Zielobjekt" der Aufnahme zu identifizieren und nachfolgend all **Features** abseits des Objektes ignoriert. Dadurch besteht praktisch kein Unterschied mehr zwischem einem "Herumlaufen" um das Objekt und einer schrittweisen Rotation des Objektes selbst. Achtung - bei weichen, deformierbaren Objekten besteht die Gefahr das Objekt zu verformen, hier empfiehlt sich ein Drehteller oder anderweitige Unterlage, mittels der das Objekt gedreht werden kann.
+
+  **So wird ja die Unterseite des Objektes garnicht gesehen!**
+  <br>
+  Richtig, auch hier kann aber das *Object Masking* helfen. Solide Objekte können dabei beliebig umgedreht, hingelegt und rotiert werden, ohne die Rekonstruktion zu beeinträchtigen. Dadurch kann auch die Unterseite mit aufgenommen werden. Dies gestaltet sich bei deformierbaren Objekten jedoch schwierig, Option ist hier das Aufhängen oder anderweitige Suspendieren in der Luft, um auch Fotoringe von unterhalb aufnehmen zu können.
+
+  <div style="overflow:auto">
+    <div style="float:left;width:48%;">
+      <img src="res/series_no_mask.png" alt="Photoseries" />
+    </div>
+    <div style="float:right;width:48%;">
+      <img src="res/series_with_mask.png" alt="Photoserie mit Bedarf für *Object Masking*" />
+    </div>
+  </div>
+  <div style="overflow:auto">
+    <div style="float:left;width:48%;">
+      <p style="text-align:center"> Photoserie ohne Bedarf für *Object Masking* <br>(Kamera bewegt sich um Objekt, Objekt ist statisch im Bezug auf Umgebung) </p>
+    </div>
+    <div style="float:right;width:48%;">
+      <p style="text-align:center"> Photoserie mit Bedarf für *Object Masking* <br>(Kamera statisch, Objekt wird gedreht und verschiebt sich im Bezug auf Umgebung) </p>
+    </div>
+  </div>
+
+</div>
+
+<br><br>
+
+<p style="text-align:center"> Alles fertig?
+=== </p>
 
 Sind alle gewünschten Blickwinkel auf das Objekt ausreichend abgedeckt, kann die Aufnahme schließlich beendet werden.
 Abschließend kann noch die gewünschte Qualität des 3D-Modells (beeinflusst auch die Dateigröße! - am besten 'Medium' oder 'Full') eingestellt, und bei Bedarf das bereits erwähnte *Object Masking* aktiviert werden.
 
-TODO: images for review, quality & masking
+<div style="overflow:auto">
+    <div style="margin-top:40px;margin-bottom:20px;margin-left:auto;margin-right:auto;width:80%;">
+      <img src="res/Polycam_finished_v2.png" alt="Abschluss der Aufnahme" />
+    </div>
+  </div>
+  <div style="overflow:auto">
+    <div style="float:left;width:40%;">
+      <p style="text-align:center;margin-left:auto;margin-right:auto;width:60%"> Im *Review*-Modus können bisher genommene Photos überprüft und bei Bedarf wieder entfernt werden. </p>
+    </div>
+    <div style="float:right;width:40%;">
+      <p style="text-align:center;margin-left:auto;margin-right:auto;width:60%"> Bei Projekt-Abschluss können gewünschte Qualität sowie *Object Masking* eingestellt werden. </p>
+    </div>
+  </div>
 
 Da die Erstellung des 3D-Modells sehr rechenintensiv ist, wird der Prozess nicht lokal auf dem Smartphone gestartet. Stattdessen verwenden alle Photogrammetrie-Apps an dieser Stelle *Cloud Computing*, wobei die aufgenommenen Bilder an einen Server geschickt werden, der die Berechnung übernimmt (WLAN verwenden um übermäßigen Datenverbrauch zu vermeiden). Klassischerweise ergibt sich daraus eine Wartezeit von ca. 5-10 Minuten, bis das fertige Objekt in der Projekt-Gallerie der App betrachtet werden kann.
 
-TODO: image final
 <br><br><br>
 ***Erfolg! - Schon haben wir ein erstes eigenes 3D-Modell erzeugt!***
 
@@ -279,45 +325,48 @@ Um das Objekt genauer zu betrachten und zu verändern, wählen wir es aus der Pr
 
 Tipp: Polycam besitzt auch ein [Webinterface](https://poly.cam). Wenn ihnen ein Desktop-PC oder Laptop zur Verfügung steht haben sie auch dort Zugriff auf alle bereits an den Server übermittelten Projekte. Die Nachbearbeitung ist hierüber meist angenehmer als über einen Smartphone-Touchscreen.
 
-TODO: image editing menu
+![Image](res/edit_mode.png)
 
 > ***Origin***<br>
 > Der sogenannte *Origin* (= Ursprung) oder Mittelpunkt des Objektes liegt manchmal nicht im Zentrum der 3D-Szene.
 > Dies ist ein eher seltenes Problem bei automatisierten Photogrammetrie-Pipelines und kann daher z.B. in Polycam nicht bearbeitet werden.
 > Wichtig für den Import des Modells in andere Software.<br><br>
 >
-> ![Image](res/TODO)
+> ![Image](res/edit_translate.png)
 
 > ***Rotation***<br>
 > Ähnlich zum *Origin* ist auch die Orientierung des Objektes oft unerwartet im Verhältnis zu den Hauptachsen der 3D-Szene.
 > Da die Software meist nicht von selbst feststellen kann, wo bspw. "oben" ist, wird die Rotation z.T. arbiträr gesetzt, dadurch entsteht unerwünschtes Verhalten beim Drehen und Bewegen des Objektes und beim Import in andere 3D-Software.<br>
 > Hier gibt uns Polycam die Möglichkeit, das Objekt neu zu Orientieren. Dazu einfach unter **Rotate** das Objekt mittels der bunten "Anfasser" drehen, bis die gewünschte Orientierung im Bezug zu der Bodenfläche (graues Gitter) erreicht ist. Wird die Änderung angewendet, sollte ein merklich natürlicheres Rotationsverhalten bei Betrachtung zu beobachten sein.
 >
->![Images](res/3xTODO-RotationBeforeChangeAfter)
+>![Image](res/edit_rotate_before.png)
+>![Image](res/edit_rotate.png)
+>![Image](res/edit_rotate_after.png)
 
 > ***Skalierung***<br>
 > Auch die Größe des Originalobjekts ist häufig nicht korrekt im 3D-Modell abgebildet. Dies ist abermals beim Import in andere 3D-Szenen ein Problem, aber auch bspw. bei der Analyse und Beforschung eines digitalisierten Objekts.
 > Zur Korrektur können unter **Rescale** Punkte auf dem Modell ausgewählt werden, deren reale Distanz voneinander bekannt ist bzw. ausgemessen wurde (Bei professioneller Anwendung werden hierfür standartisierte Marker am oder neben dem Objekt angebracht). Die Distanz der Punkte in der digitalen Szene kann dann dementsprechend angepasst werden.
 >
-> ![Image](res/TODO-Skalierung)
+> ![Image](res/edit_scale.png)
 
 > ***Outlier***<br>
 > Als *Outlier* (= Ausreißer) versteht man bei 3D-Modellen einzelne Punkte, Kanten oder Flächen (die Grundbausteine eines *Meshes*), die nicht mit dem Hauptobjekt verbunden sind - diese Artefakte entstehen entweder aus falsch erkannten *Features* bei der Modellberechnung oder später bei der Umwandlung der Punktewolke zum *Mesh*. Eine grundlegendes *Outlier Removal* wird von den meisten Photogrammetrie-Apps standartmäßig durchgeführt. Darüber hinaus gibt es in Polycam keine manuelle Bearbeitungsmöglichkeit.
 >
-> ![Image?](res/TODO-OutlierNoOutlier)
+> ![Image?](res/edit_outlier.png)
 
 > ***Unerwünschte(r) Hintergrund(objekte)***<br>
 > Insbesondere bei der Photogrammetrie ohne *Object Masking* beinhaltet die rekonstruierte Szene meist noch Teile und Objekte des Hintergrundes (Tischplatte, Wände, zusätzliche Objekte).
 > Sofern die Digitalisierung des gesamten Raumes bzw. der Gesamtszene jedoch nicht Ziel der Aufnahme war, ist es sinnvoll die Szene auf das gewünschte Objekt zu reduzieren.<br>
 > Hierfür kann via **Crop** entweder eine Box oder ein Zylinder definiert und über die "Anfasser" angepasst werden, die ausschließlich das Objekt beinhalten, oder es werden über die **Crop Out** Option in mehreren Schritten einzelne unerwünschte Teile des Objektes weggeschnitten.
 >
-> ![Images](res/2x?3xTODO-CropInCropOut)
+> ![Image](res/edit_crop_in.png)
+> ![Image](res/edit_crop_out.png)
 
 > ***Farbe & Ton***<br>
 > Ist die allgemeine Färbung des Objektes nicht zufriedenstellend, können gewisse Änderungen bzgl Farbsättigung, Kontrast, Temperatur etc. auch nachträglich noch unter **Color** angepasst werden.
 > Sind jedoch nur stellenweise unerwünschte Verfärbungen oder Hell-Dunkel-Wechsel aufgetreten ist dies häufig ein Hinweis auf ungleiche/unausreichende Beleuchtung des Objektes bei der Aufnahme - derartige Fehler sind schwer nachträglich zu beheben und erfordern oft eine Neuaufnahme des Objektes.
 >
-> ![Image](res/TODO-Farbe)
+> ![Image](res/edit_tonemap.png)
 
 > ***Geometrie-Auflösung/Dateigröße***<br>
 > Je nach weiterem Verwendungszweck bestehen oft sehr spezifische Anforderungen an die Detail-Auflösung der Geometrie oder die allgemeine Dateigröße.<br>
@@ -326,14 +375,14 @@ TODO: image editing menu
 > Hierzu kann in Polycam unter **Remesh** ein expliziter Reduktionsfaktor oder eine gewünschte Polygonzahl (Anzahl einzelner Flächen im *Mesh*) angegeben werden. Die Einstellung **Uniform** sorgt dabei für eine gleichmäßige Reduktion der Auflösung über das *Mesh* hinweg, während bei **Adaptive** versucht wird, an detailreichen Stellen des Objektes hohe Auflösung zu bewahren und sie an detailärmeren Stellen ausgleichend stärker zu reduzieren.
 > Auch die Texturauflösung kann reduziert werden, der Einfluß auf die Dateigröße ist hier aber häufig geringer als im Falle der Geometrie.
 >
-> ![Image](res/TODO-remesh)
-> TODO - texture size?
+> ![Image](res/edit_remesh.png)
 
 > ***Textur- & Geometrie-Fehler***<br>
 > Treten bei der Rekonstruktion erkenntliche Fehler bei der Geometrie oder den Texturen auf, ist dies meist ein Indiz für schlechte Abdeckung der betreffenden Bereiche bei der Aufnahme, oder für problematisches Material (reflektive/transparente Objektteile). Durch einfache Nachbearbeitung ist dies kaum zu beheben, entweder müssen die fehlerhaften Bereiche in einem externen Programm manuell nachmodelliert werden, oder es wird eine Neuaufnahme versucht.
 > Eine dritte Option besteht hier je nach Software noch in der Erweiterung der bisherigen Aufnahme um zusätzliche Bilder. Polycam bietet dazu die **Extend**-Option an, die einen zurück in den Aufnahmemodus versetzt, bei der Modellberechnung aber vorhergehende Bilder miteinbezieht.
 >
-> ![Image](res/TODO-geometryErrorAndExtend)
+> ![Image](res/edit_geometry_error.png)
+> ![Image](res/edit_extend_capture.png)
 
 > ***Dateiformat bei Export***<br>
 > Eine Weiterverwendung der Modells setzt selbstverständlich einen Export der Modelldatei voraus. Während eine nachträgliche Umwandlung zwischen Dateiformaten oft möglich ist, gehen in manchen Fällen bestimmte Informationen verloren.
@@ -358,16 +407,16 @@ Aufgrund der Popularität von **Sketchfab**, und da neue **kompakkt**-Nutzer die
 
 Auch Sketchfab erwartet vor der Nutzung wieder eine kostenlose Registrierung von seinen Nutzern. Nach Mail-Verifikation, optionaler Profileinrichtung und Wahl des Abonnements (kein kostenpflichtiges Abo notwendig!) kann auch schon direkt losgelegt werden. Nach Wahl der **Upload**-Option kann denkbar einfach über den Dateibrowser oder direktes Drag-and-Drop das gewünschte 3D-Modell ausgewählt werden.
 
-TODO: upload gif
+![Image](res/sketchfab_uploading.gif)
 
 Nach Auswahl der Datei öffnet sich direkt das Bearbeitungsmenü des neuen Eintrags, bis das Modell selbst geladen ist und testweise betrachtet werden kann braucht es noch einen Moment Geduld.
 
-TODO: processing gif
+![Image](res/sketchfab_processing.gif)
 
 Ist das Modell fertig geladen, kann nun es nun auch über das kleine Viewer-Fenster betrachtet werden oder direkt über die Option **Edit 3D Settings** nachmals bearbeitet werden.
 Da **Sketchfab** einen anderen *Renderer* (= 3D-Darstellungsprogramm) als **Polycam** verwendet, sehen viele Objekte erstmal anders aus. Standartmäßig wird die Beleuchtung hier einem industriellen Innenraum nachempfunden, wem dies nicht gefällt, der kann die Beleuchtung entweder manuell nach Wunsch einstellen (Lampen-Symbol), oder auf eine Beleuchtungssimulation verzichten und durch die **Shadeless**-Option die ungefilterte Darstellung der rekonstruierten Objektfarben erzwingen.
 
-TODO: shadeless gif
+![Image](res/sketchfab_shadeless.gif)
 
 Ist die Sichtbarkeit durch den Hintergrund behindert, kann auch dieser hier angepasst werden, sowie ein vorteilhafte initiale Kameraposition definiert werden und viele weitere Änderungen, um das Objekt von seiner besten Seite zu präsentieren. 
 Um das Objekt rein zur interessierten Betrachtung zu Veröffentlichen ist an dieser Stelle aber auch kein großer Aufwand erforderlich.
@@ -375,7 +424,7 @@ Um das Objekt rein zur interessierten Betrachtung zu Veröffentlichen ist an die
 Relevante Einstellungen sind weiterhin die Sichtbarkeit (Bei kostenfreier Nutzung zwangsweise "öffentlich") und ob anderen Nutzern die Möglichkeit zum Download des Modells gegeben werden soll sowie die entsprechende Lizenzierung.
 Nach Wahl passenden Titels und einer (optionalen) kurzen Beschreibung kann das Modell dann auch schon mit einem Klick auf **Publish** veröffentlicht werden!
 
-TODO: publishing gif
+![Image](res/sketchfab_publishing.gif)
 
 Das fertige Modell ist ab sofort öffentlich auf **Sketchfab** verfügbar und kann von allen Interessierten betrachtet werden, und je nach Freigabe auch heruntergeladen und weiterverwendet werden.
 <br><br><br>
