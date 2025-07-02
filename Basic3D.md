@@ -37,6 +37,8 @@ Um die Qualität der Ergebnisse zu steigern, empfehlen wir modular und schrittwe
 
 ## Einführung
 
+TODO - Hier muss noch ein bisschen Text rein
+
 #### Was ist unser Ziel?
 
 Diese Lernressource ist offensichtlich nicht für Leute gedacht, die in ihrem Arbeitsalltag bereits erfolgreich und routiniert 3D-Digitalisate erschaffen.
@@ -341,15 +343,20 @@ Tipp: Polycam besitzt auch ein [Webinterface](https://poly.cam). Wenn ihnen ein 
 > Da die Software meist nicht von selbst feststellen kann, wo bspw. "oben" ist, wird die Rotation z.T. arbiträr gesetzt, dadurch entsteht unerwünschtes Verhalten beim Drehen und Bewegen des Objektes und beim Import in andere 3D-Software.<br>
 > Hier gibt uns Polycam die Möglichkeit, das Objekt neu zu Orientieren. Dazu einfach unter **Rotate** das Objekt mittels der bunten "Anfasser" drehen, bis die gewünschte Orientierung im Bezug zu der Bodenfläche (graues Gitter) erreicht ist. Wird die Änderung angewendet, sollte ein merklich natürlicheres Rotationsverhalten bei Betrachtung zu beobachten sein.
 >
->![Image](res/edit_rotate_before.png)
->![Image](res/edit_rotate.png)
->![Image](res/edit_rotate_after.png)
+><div>
+  <img src="">
+  <img>
+  <img>
+</div>
+>![Image](res/rotation_wrong.gif)
+>![Image](res/rotation_fix.gif)
+>![Image](res/rotation_right.gif)
 
 > ***Skalierung***<br>
 > Auch die Größe des Originalobjekts ist häufig nicht korrekt im 3D-Modell abgebildet. Dies ist abermals beim Import in andere 3D-Szenen ein Problem, aber auch bspw. bei der Analyse und Beforschung eines digitalisierten Objekts.
 > Zur Korrektur können unter **Rescale** Punkte auf dem Modell ausgewählt werden, deren reale Distanz voneinander bekannt ist bzw. ausgemessen wurde (Bei professioneller Anwendung werden hierfür standartisierte Marker am oder neben dem Objekt angebracht). Die Distanz der Punkte in der digitalen Szene kann dann dementsprechend angepasst werden.
 >
-> ![Image](res/edit_scale.png)
+> ![Image](res/scale_fix.gif)
 
 > ***Outlier***<br>
 > Als *Outlier* (= Ausreißer) versteht man bei 3D-Modellen einzelne Punkte, Kanten oder Flächen (die Grundbausteine eines *Meshes*), die nicht mit dem Hauptobjekt verbunden sind - diese Artefakte entstehen entweder aus falsch erkannten *Features* bei der Modellberechnung oder später bei der Umwandlung der Punktewolke zum *Mesh*. Eine grundlegendes *Outlier Removal* wird von den meisten Photogrammetrie-Apps standartmäßig durchgeführt. Darüber hinaus gibt es in Polycam keine manuelle Bearbeitungsmöglichkeit.
@@ -361,7 +368,7 @@ Tipp: Polycam besitzt auch ein [Webinterface](https://poly.cam). Wenn ihnen ein 
 > Sofern die Digitalisierung des gesamten Raumes bzw. der Gesamtszene jedoch nicht Ziel der Aufnahme war, ist es sinnvoll die Szene auf das gewünschte Objekt zu reduzieren.<br>
 > Hierfür kann via **Crop** entweder eine Box oder ein Zylinder definiert und über die "Anfasser" angepasst werden, die ausschließlich das Objekt beinhalten, oder es werden über die **Crop Out** Option in mehreren Schritten einzelne unerwünschte Teile des Objektes weggeschnitten.
 >
-> ![Image](res/edit_crop_in.png)
+> ![Image](res/crop_fix.gif)
 > ![Image](res/edit_crop_out.png)
 
 > ***Farbe & Ton***<br>
