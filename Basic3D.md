@@ -10,7 +10,7 @@ email: julian.cremerius@fau.de
 icon: ./res/soda.png
 
 
-mode: Slides
+mode: Textbook
 
 dark: false
 
@@ -18,7 +18,6 @@ theme-color: yellow
 
 
 -->
-
 
 # Basics 3D
 
@@ -34,6 +33,21 @@ Im Zuge dieses kleinen Tutorials wollen wir euch mit dem 3D-Digitalisierungsproz
 Es werden daher keinerlei Grundkenntnisse vorausgesetzt und bedarf auch keiner kostenpflichtiger Software.<br>
 Die erzielten Resultate zwar schnell erstaunliche Qualität erreichen, bleiben aber natürlich hinter denen professioneller Digitalisierung zurück.<br>
 Um die Qualität der Ergebnisse zu steigern, empfehlen wir modular und schrittweise die eingesetzten Mittel und Methoden aufzuwerten (Aufnahmesetup, Rekonstruktionssoftware, Nachbearbeitung).
+
+<br><br>
+
+---
+
+<br><br>
+
+<div style="overflow:auto">
+  <div style="float:left;width:48%">
+    <img style="float:right;width:50%" src="res/funding_EU.png" alt="">
+  </div>
+  <div style="float:right;width:48%">
+    <img style="float:left;width:80%" src="res/funding_BMFTR.jpg" alt="">
+  </div>
+</div>
 
 ## Einführung
 
@@ -81,91 +95,130 @@ Wir hoffen, durch unsere Wahl einen reibungslosen Ablauf und schnelle Erfolge be
 
 ## Part 1 - Aufnahme
 
-#### Kleiner Theorie-Einblick
+Im ersten Kapitel des Tutorials beschäftigen wir uns mit dem Aufnahmeprozess selbst. Um die Funktionsweise und Limitationen der Methode zu verstehen, schauen wir uns zuerst die Algorithmik an, die der Photogrammetrie zugrunde liegt.
+Danach folgen einige notwendige Vorbereitungsschritte, bevor wir uns schlussendlich dem Aufnahmprozess selbst widmen.
+
+#### Theorie-Einblick
 
 {{0-1}}
+**********
 Hinter jeder herkömmlichen Photogrammetrie-Software versteckt sich die sogenannte *Structure-from-Motion*  Methode.
 Im Folgenden geben wir einen kleinen Überblick über die grundlegende Algorithmik - ein tieferes technisches Verständnis der Methodik ist für die 3D-Modell-Aufnahme zwar nicht zwingend notwendig, aber kann oft helfen, Fehler und entsprechende Fehlerquellen bei der Anwendung schnell zu identifizieren und zu vermeiden.
 <br><br>
 *Structure-from-Motion* (*SfM*), also 'Struktur aus Bewegung', beziehungsweise etwas freier übersetzt - 'Formerkennung durch Betrachtung aus verschiedenen Perspektiven' bezeichnet das allgemeine Konzept, die 3-dimensionale Form & Geometrie eines Objekts auf Basis mehrerer 2-dimensionaler Beobachtungen herauszufinden bzw. zu berechnen. In der *Computer Vision*-Forschung hat sich hierfür ein ganz bestimmter Prozess etabliert, den wir uns nun genauer anschauen wollen.
 
+---
+<br><br>
+**********
 
 {{1-2}}
+**********
 Wie aus der Methoden-Bezeichnung bereits hervorgeht, ist für die *SfM*-Aufnahme alse eine Reihe von regulären 2D-Fotoaufnahmen notwendig.
 Es handelt sich im Grunde um klassische Objektphotographie, die aus mehreren Blickwinkeln wiederholt wird, bis eine ausreichende Abdeckung des Objekts aus allen Richtung erreicht ist. (Die Fotografischen Standards & Anforderungen unterscheiden sich jedoch etwas von denen der klassischen Objektphotographie.) <br><br><br>
 
-{{1-2}}
-<div>
-    <img src="res/photography.svg" style="float:left;width:40%;height:400px"/>
-    <img src="res/setup_photo.svg" style="float:right;width:40%;height:400px"/>
+<div style="overflow:auto">
+    <img src="res/photography.svg" style="float:left;width:40%;margin-top:8%"/>
+    <img src="res/setup_photo.svg" style="float:right;width:40%"/>
 </div>
 
+---
+<br><br>
+**********
+
 {{2-3}}
+**********
 Bevor das Modell selber aber berechnet werden kann, fehlt an dieser Stelle noch eine wichtige Information - In welchem räumlichen Verhältnis stehen die einzelnen Kameraperspektiven zueinander?
 Da entweder die Kamera oder das Objekt zwischen den Aufnahmen bewegt werden muss und eine technische Messung der Bewegungen häufig nicht akkurat genug ist, wird versucht diese räumlichen Verhältnisse aus den Bildern selbst zu bestimmen. <br><br><br>
 
-{{2-3}}
-<div>
-    <img src="res/triangulation_photo_problem.svg" alt="Problemstellung der Photogrammetrie" style="float:left;width:40%;height:400px"/>
-    <img src="res/triangulation_photo.svg" alt="Lösungsansatz der Photogrammetrie" style="float:right;width:40%;height:400px"/>
+<div style="overflow:auto">
+    <img src="res/triangulation_photo_problem.svg" alt="Problemstellung der Photogrammetrie" style="float:left;width:40%"/>
+    <img src="res/triangulation_photo.svg" alt="Lösungsansatz der Photogrammetrie" style="float:right;width:40%"/>
 </div>
 
+---
+<br><br>
+**********
+
 {{3-4}}
+**********
 Für diese Berechnung ist es notwendig, visuelle *Features* (= Merkmale) der abgebildeten Szene in einer Vielzahl verschiedener Bilder wiederzuerkennen. Hier kommen daher sogenannte *Feature Detection*-Algorithmen zum Einsatz, insbesondere *SIFT* (= *Scale-invariant feature transform*, optimiert für Wiedererkennung von Merkmalen trotz verschiedener Größen/Rotation/Belichtung) oder *SURF* (= *Sped-up robust features*, ein Kompromiss zwischen schnellerer Laufzeit und robusten Ergebnissen). Das Ergebnis dieser *Feature Detection* sieht wie folgt aus: <br><br><br>
 
 {{3-4}}
-<div>
-    <img src="res/features_1.png" alt="SIFT Feature Detection (Bsp 1)" style="float:left;width:48%;height:400px"/>
-    <img src="res/features_2.png" alt="SIFT Feature Detection (Bsp 2)" style="float:right;width:48%;height:400px"/>
+<div style="overflow:auto">
+    <img src="res/features_1.png" alt="SIFT Feature Detection (Bsp 1)" style="float:left;width:48%;"/>
+    <img src="res/features_2.png" alt="SIFT Feature Detection (Bsp 2)" style="float:right;width:48%;"/>
 </div>
 
-{{4-5}}
-Da all diese *Features* aufgrund ihres hohen Wiedererkennungswertes ausgesucht wurden, ist nun ein *Feature Matching* (= Merkmalsabgleich) möglich, wobei zu allen *Features* eines Bildes korrespondierende 'Partner'-*Features* in anderen Bildern gesucht werden. <br><br><br><br><br>
+---
+<br><br>
+**********
 
 {{4-5}}
-![SIFT Feature Matching](res/matching.png)
+**********
+Da all diese *Features* aufgrund ihres hohen Wiedererkennungswertes ausgesucht wurden, ist nun ein *Feature Matching* (= Merkmalsabgleich) möglich, wobei zu allen *Features* eines Bildes korrespondierende 'Partner'-*Features* in anderen Bildern gesucht werden. <br><br><br>
+
+<div style="overflow:auto">
+    <img src="res/matching.png" alt="SIFT Feature Matching" style="float:center;width:100%;"/>
+</div>
+
+---
+<br><br>
+**********
 
 {{5-7}}
-Da an diesem Punkt (hoffentlich) ausreichend Zusammenhänge zwischen den Kameraperspektiven und den von ihnen gesehenen Szenenbereichen bekannt sind, ist hier eine Triangulation der Kamerapositionen zueinander möglich.
+Sofern an diesem Punkt ausreichend Zusammenhänge zwischen den Kameraperspektiven und den von ihnen gesehenen Szenenbereichen registriert wurden, ist nun eine Triangulation der Kamerapositionen zueinander möglich.
 Ausgehend von einer beliebigen Kameraperspektive und den erkannten *Features*, werden nach und nach zusätzliche Perpektiven ausgerechnet und in die Szene hinzugefügt. Diese Berechnungen liefern uns zwei wichtige Ergebnisse:
 
 {{5-6}}
-1. Die räumlichen Verhältnisse zwischen den Kameras & 
+**********
+1. Die räumlichen Verhältnisse zwischen den Kameras 
 
-{{5-6}}
 ![SfM-Rekonstruktion der Szene](res/sfm_result.png)
+**********
 
 {{6-7}}
+**********
 2. Die sog. *Sparse Point Cloud* (= dünn besetzte Punktewolke)
 
-{{6-7}}
 ![Die *Sparse Point Cloud*](res/sparse_pc.png)
 
+---
+<br><br>
+**********
+
 {{7-8}}
+**********
 Auf Basis der *Sparse Point Cloud* wird danach noch einmal jedes Bild betrachtet, und Bildpunkte, die zuvor nicht bereits als *Features* genutzt wurden, werden verwendet, um die Punktwolke langsam zu verdichten.
 Wenn alle Bilder noch einmal durchgegangen wurden, erhalten wir die *Dense Point Cloud* (= dicht besetzte Punktwolke).
 
-{{7-8}}
 ![Die *Dense Point Cloud*](res/dense_pc.png)
 
+---
+<br><br>
+**********
+
 {{8-9}}
-Die Verwendung von Punktwolken zur Geometriedarstellung hat allerdings diverse Nachteile und wird von vieler Software und auch Hardware nicht effizient oder auch garnicht unterstützt.
+**********
+Die Verwendung von Punktwolken zur Geometriedarstellung hat allerdings diverse Nachteile und wird von vieler Software und auch Hardware nicht effizient oder sogar überhaupt nicht unterstützt.
 Daher ist häufig die Umrechnung zu einem *(Polygon) Mesh* (= Polygonnetz, üblichste 3D-Geometriedarstellung) wünschenswert, viele Photogrammetrie-Programme führen diesen Schritt auch automatisch mit aus.
 Nachdem das *Mesh* berechnet wurde und die Texturen darauf projiziert wurden, erhalten wir schließlich das Endresultat der Photogrammetrie: <br><br><br>
 
-{{8-9}}
 <div>
-    <img src="res/mesh.png" alt="Berechnung des *Polygon Mesh*" style="float:left;width:48%;height:400px"/>
-    <img src="res/textures.png" alt="Projektion der Farbtextur auf das *Mesh*" style="float:right;width:48%;height:400px"/>
+    <img src="res/mesh.png" alt="Berechnung des *Polygon Mesh*" style="float:left;width:48%"/>
+    <img src="res/textures.png" alt="Projektion der Farbtextur auf das *Mesh*" style="float:right;width:48%"/>
 </div>
 
-#### Vorbereitung
+---
+<br><br>
+**********
 
-{{0-1}}
+#### Vorbereitung - Aufnahmegerät
+
+
 Setup einer Aufnahme-App
 ===
 
-{{0-1}}
+
 Bevor wir uns mit der 3D-Aufnahme selber beschäftigen können, braucht es selbstverständlich ein Aufnahme-Setup. <br>
 Im Falle der Photogrammetrie kann so ein Aufnahme-Setup zwar fast beliebig aufwendig und teuer werden (DSLR Kamera, Studio-Beleuchtung, Polfilter, mech. Drehteller, etc), aber zum Glück auch fast beliebig schlicht gehalten werden. <br>
 Die einzige unabdingbare Voraussetzung ist eine Kamera - über die bereits jedes heutige Smartphone verfügt.
@@ -178,7 +231,7 @@ Alle dieser Optionen sind kostenlos benutzbar, nachdem die Berechnung der 3D-Mod
 <br><br>
 Alle Apps können je nach Smartphone über den Google Play Store oder den Apple App Store installiert werden.
 
-{{0-1}}
+
 |              |                                                                                           |                                                                                |
 | ------------ | :---------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------: |
 | Polycam:     |         [Android](https://play.google.com/store/apps/details?id=ai.polycam&hl=en)         |   [iOS](https://apps.apple.com/de/app/polycam-lidar-3d-scanner/id1532482376)   |
@@ -186,17 +239,17 @@ Alle Apps können je nach Smartphone über den Google Play Store oder den Apple 
 | KIRI Engine: |     [Android](https://play.google.com/store/apps/details?id=com.kiriengine.app&hl=en)     | [iOS](https://apps.apple.com/de/app/kiri-engine-3d-scanner-lidar/id1577127142) |
 | Scaniverse:  | [Android](https://play.google.com/store/apps/details?id=com.nianticlabs.scaniverse&hl=en) |    [iOS](https://apps.apple.com/de/app/scaniverse-3d-scanner/id1541433223)     |
 
-{{0-1}}
-Nach Installation der gewählten App ist in den meisten Fällen auch die Registrierung eines Benutzerkontos nötig - das Abschließen eines kostenpflichtigen Abos ist bei keiner dieser Apps notwendig! Das Tutorial kann mit den kostenlos verfügbaren Features durchgeführt werden.
 
-{{1}}
-Aufnahme-Objekt & -Setup
+Nach Installation der gewählten App ist in den meisten Fällen auch die Registrierung eines Benutzerkontos nötig - das Abschließen eines kostenpflichtigen Abos ist jedoch bei keiner dieser Apps notwendig! Das Tutorial kann mit den kostenlos verfügbaren Features durchgeführt werden.
+
+#### Vorbereitung - Objekt & Umgebung
+
+I. Objekt
 ===
 
-{{1}}
 Natürlich benötigen wir auch noch ein Objekt, von dem wir ein 3D-Modell erzeugen wollen. In der Praxis wird der gesamte Aufnahmeprozess selbstverständlich für ein bestimmtes Objekt oder eine Objektgruppe geplant - um sich mit der Methodik vertraut zu machen empfiehlt sich hier aber im ersten Anlauf die Wahl eines gut geeigneten Objekts. Auf die technische Grundlage der Methode zurückblickend ergeben sich hierfür zwei primäre Anforderungen:
 
-{{1}}
+
 * Auf der Oberfläche des Objekts müssen **Features** erkannt werden können
   
   * d.h. große glatte & einfarbige Flächen eignen sich nicht gut für die Photogrammetrie
@@ -205,22 +258,20 @@ Natürlich benötigen wir auch noch ein Objekt, von dem wir ein 3D-Modell erzeug
 
   * d.h. transparente & reflektive Oberflächen, deren Aussehen stark blickwinkelabhängig ist sind ebenfalls nicht optimal
 
-{{1}}
+
 Eben diese Anforderungen stellen auch die größte Limitation der Photogrammetrie dar, mit spezieller Belichtung, Polfiltern oder Oberflächensprays kann diesen Problemen oft entgegengewirkt werden, dies ist jedoch mit zusätzlichem Aufwand verbunden und keine Garantie für Erfolg.
 <br><br>
 
-{{1}}
----
+II. Umgebung
+===
 
-{{1}}
 Der wichtigste Umgebungsfaktor für die Aufnahme besteht in der Beleuchtung unserer Szene - je geringer der direkte Lichteinfall ist, desto besser. Gleichzeitig soll das Objekt natürlich ausreichend beleuchtet sein, um gut erkannt und abgebildet zu werden. Das Optimum besteht in einer diffusen, gleichmäßigen Ausleuchtung des Raumes ohne direkte "Lichtbestrahlung". Bei 3D-Aufnahmen im Freien eignen sich insbesondere helle, aber bedeckte Tage, in geschlossenen Räumen werden bestenfalls sogennante *Softboxen* oder Fotozelte verwendet. Zum Zwecke dieses Tutorials reicht es allerdings vollkommen aus, das Objekt nicht zu direkt "anzustrahlen".
 <br><br>
 Eine leergeräumte Tischplatte reicht vorerst vollkommen als Hinter- bzw. Untergrund für die Aufnahme. Stark gefüllte & bunte Hintergründe können in manchen Fällen zur Fehlerquelle werden (Führt zu vielen zusätzlichen Features im Hintergrund -> Gut für die Orientierung der Kameras, kann aber die Objektrekonstruktion stören)
 
-{{1}}
 ![Image](res/capturing_setup.png)
 
-#### Capturing - How to?
+#### Capturing
 <br><br>
 
 
@@ -317,7 +368,7 @@ Da die Erstellung des 3D-Modells sehr rechenintensiv ist, wird der Prozess nicht
 ***Erfolg! - Schon haben wir ein erstes eigenes 3D-Modell erzeugt!***
 
 
-## Part 2 - Nachbearbeitung
+## Part 2 - Modellfehler & Nachbearbeitung
 
 Ein wichtiger Schritt bei der Erzeugung hochwertiger 3D-Digitalisate besteht in der richtigen Nachbearbeitung der Modelle.
 Je nach Verwendungszweck kann die Nachbearbeitung im "Low-End"- & Hobbybereich der Photogrammetrie noch recht knapp ausfallen, unter anderem weil viele Photogrammetrie-Apps bereits einige automatisierte Nachbearbeitungsschritte durchführen. Bei höheren Qualitätsansprüchen und der Notwendigkeit für individuelle Nachbearbeitung steigt dieser Aufwand jedoch schnell.
@@ -331,73 +382,76 @@ Tipp: Polycam besitzt auch ein [Webinterface](https://poly.cam). Wenn ihnen ein 
 
 ![Image](res/edit_mode.png)
 
-> ***Origin***<br>
-> Der sogenannte *Origin* (= Ursprung) oder Mittelpunkt des Objektes liegt manchmal nicht im Zentrum der 3D-Szene.
-> Dies ist ein eher seltenes Problem bei automatisierten Photogrammetrie-Pipelines und kann daher z.B. in Polycam nicht bearbeitet werden.
-> Wichtig für den Import des Modells in andere Software.<br><br>
->
-> ![Image](res/edit_translate.png)
+#### ***Origin***<br>
+Der sogenannte *Origin* (= Ursprung) oder Mittelpunkt des Objektes liegt manchmal nicht im Zentrum der 3D-Szene.
+Dies ist ein eher seltenes Problem bei automatisierten Photogrammetrie-Pipelines und kann daher z.B. in Polycam nicht bearbeitet werden.
+Wichtig für den Import des Modells in andere Software.<br><br>
 
-> ***Rotation***<br>
-> Ähnlich zum *Origin* ist auch die Orientierung des Objektes oft unerwartet im Verhältnis zu den Hauptachsen der 3D-Szene.
-> Da die Software meist nicht von selbst feststellen kann, wo bspw. "oben" ist, wird die Rotation z.T. arbiträr gesetzt, dadurch entsteht unerwünschtes Verhalten beim Drehen und Bewegen des Objektes und beim Import in andere 3D-Software.<br>
-> Hier gibt uns Polycam die Möglichkeit, das Objekt neu zu Orientieren. Dazu einfach unter **Rotate** das Objekt mittels der bunten "Anfasser" drehen, bis die gewünschte Orientierung im Bezug zu der Bodenfläche (graues Gitter) erreicht ist. Wird die Änderung angewendet, sollte ein merklich natürlicheres Rotationsverhalten bei Betrachtung zu beobachten sein.
->
-><div>
-  <img src="">
-  <img>
-  <img>
+![Image](res/edit_translate.png)
+
+#### ***Rotation***<br>
+Ähnlich zum *Origin* ist auch die Orientierung des Objektes oft unerwartet im Verhältnis zu den Hauptachsen der 3D-Szene.
+Da die Software meist nicht von selbst feststellen kann, wo bspw. "oben" ist, wird die Rotation z.T. arbiträr gesetzt, dadurch entsteht unerwünschtes Verhalten beim Drehen und Bewegen des Objektes und beim Import in andere 3D-Software.<br>
+Hier gibt uns Polycam die Möglichkeit, das Objekt neu zu Orientieren. Dazu einfach unter **Rotate** das Objekt mittels der bunten "Anfasser" drehen, bis die gewünschte Orientierung im Bezug zu der Bodenfläche (graues Gitter) erreicht ist. Wird die Änderung angewendet, sollte ein merklich natürlicheres Rotationsverhalten bei Betrachtung zu beobachten sein.
+
+<div style="overflow:auto">
+  <img style="float:left;width:30%;margin-right:5%;text-align:center;" src="res/rotation_wrong.gif" alt="">
+  <img style="float:left;width:30%;text-align:center;" src="res/rotation_fix.gif" alt="">
+  <img style="float:left;width:30%;margin-left:5%;text-align:center;" src="res/rotation_right.gif" alt="">
 </div>
->![Image](res/rotation_wrong.gif)
->![Image](res/rotation_fix.gif)
->![Image](res/rotation_right.gif)
 
-> ***Skalierung***<br>
-> Auch die Größe des Originalobjekts ist häufig nicht korrekt im 3D-Modell abgebildet. Dies ist abermals beim Import in andere 3D-Szenen ein Problem, aber auch bspw. bei der Analyse und Beforschung eines digitalisierten Objekts.
-> Zur Korrektur können unter **Rescale** Punkte auf dem Modell ausgewählt werden, deren reale Distanz voneinander bekannt ist bzw. ausgemessen wurde (Bei professioneller Anwendung werden hierfür standartisierte Marker am oder neben dem Objekt angebracht). Die Distanz der Punkte in der digitalen Szene kann dann dementsprechend angepasst werden.
->
-> ![Image](res/scale_fix.gif)
+<div style="overflow:auto">
+  <p style="float:left;width:30%;margin-right:5%;text-align:center;">Before</p>
+  <p style="float:left;width:30%;text-align:center;">Fixing the rotation</p>
+  <p style="float:left;width:30%;margin-left:5%;text-align:center;">After</p>
+</div>
 
-> ***Outlier***<br>
-> Als *Outlier* (= Ausreißer) versteht man bei 3D-Modellen einzelne Punkte, Kanten oder Flächen (die Grundbausteine eines *Meshes*), die nicht mit dem Hauptobjekt verbunden sind - diese Artefakte entstehen entweder aus falsch erkannten *Features* bei der Modellberechnung oder später bei der Umwandlung der Punktewolke zum *Mesh*. Eine grundlegendes *Outlier Removal* wird von den meisten Photogrammetrie-Apps standartmäßig durchgeführt. Darüber hinaus gibt es in Polycam keine manuelle Bearbeitungsmöglichkeit.
->
-> ![Image?](res/edit_outlier.png)
+#### ***Skalierung***<br>
+Auch die Größe des Originalobjekts ist häufig nicht korrekt im 3D-Modell abgebildet. Dies ist abermals beim Import in andere 3D-Szenen ein Problem, aber auch bspw. bei der Analyse und Beforschung eines digitalisierten Objekts.
+Zur Korrektur können unter **Rescale** Punkte auf dem Modell ausgewählt werden, deren reale Distanz voneinander bekannt ist bzw. ausgemessen wurde (Bei professioneller Anwendung werden hierfür standartisierte Marker am oder neben dem Objekt angebracht). Die Distanz der Punkte in der digitalen Szene kann dann dementsprechend angepasst werden. Die Bearbeitung hat keine offensichtlichen Folgen in der 3D-Ansicht, wohl aber auf den Export des Modells.
 
-> ***Unerwünschte(r) Hintergrund(objekte)***<br>
-> Insbesondere bei der Photogrammetrie ohne *Object Masking* beinhaltet die rekonstruierte Szene meist noch Teile und Objekte des Hintergrundes (Tischplatte, Wände, zusätzliche Objekte).
-> Sofern die Digitalisierung des gesamten Raumes bzw. der Gesamtszene jedoch nicht Ziel der Aufnahme war, ist es sinnvoll die Szene auf das gewünschte Objekt zu reduzieren.<br>
-> Hierfür kann via **Crop** entweder eine Box oder ein Zylinder definiert und über die "Anfasser" angepasst werden, die ausschließlich das Objekt beinhalten, oder es werden über die **Crop Out** Option in mehreren Schritten einzelne unerwünschte Teile des Objektes weggeschnitten.
->
-> ![Image](res/crop_fix.gif)
-> ![Image](res/edit_crop_out.png)
+![Image](res/scale_fix.gif)
 
-> ***Farbe & Ton***<br>
-> Ist die allgemeine Färbung des Objektes nicht zufriedenstellend, können gewisse Änderungen bzgl Farbsättigung, Kontrast, Temperatur etc. auch nachträglich noch unter **Color** angepasst werden.
-> Sind jedoch nur stellenweise unerwünschte Verfärbungen oder Hell-Dunkel-Wechsel aufgetreten ist dies häufig ein Hinweis auf ungleiche/unausreichende Beleuchtung des Objektes bei der Aufnahme - derartige Fehler sind schwer nachträglich zu beheben und erfordern oft eine Neuaufnahme des Objektes.
->
-> ![Image](res/edit_tonemap.png)
+#### ***Outlier***<br>
+Als *Outlier* (= Ausreißer) versteht man bei 3D-Modellen einzelne Punkte, Kanten oder Flächen (die Grundbausteine eines *Meshes*), die nicht mit dem Hauptobjekt verbunden sind - diese Artefakte entstehen entweder aus falsch erkannten *Features* bei der Modellberechnung oder später bei der Umwandlung der Punktewolke zum *Mesh*. Eine grundlegendes *Outlier Removal* wird von den meisten Photogrammetrie-Apps standartmäßig durchgeführt. Darüber hinaus gibt es in Polycam keine manuelle Bearbeitungsmöglichkeit.
 
-> ***Geometrie-Auflösung/Dateigröße***<br>
-> Je nach weiterem Verwendungszweck bestehen oft sehr spezifische Anforderungen an die Detail-Auflösung der Geometrie oder die allgemeine Dateigröße.<br>
-> Die Auflösung im Nachhinein zu erhöhen ist allerdings nur schwer möglich und erfordert eine Neuberechnung des Modells mit anderen Detaileinstellungen und/oder mehr bzw. besseren Aufnahmebildern.<br>
-> Eine Reduktion der Auflösung/Dateigröße um beispielsweise das Datenlimit einer Webseite zu erfüllen ist jedoch in fast jeder Photogrammetrie-Software nachträglich möglich.
-> Hierzu kann in Polycam unter **Remesh** ein expliziter Reduktionsfaktor oder eine gewünschte Polygonzahl (Anzahl einzelner Flächen im *Mesh*) angegeben werden. Die Einstellung **Uniform** sorgt dabei für eine gleichmäßige Reduktion der Auflösung über das *Mesh* hinweg, während bei **Adaptive** versucht wird, an detailreichen Stellen des Objektes hohe Auflösung zu bewahren und sie an detailärmeren Stellen ausgleichend stärker zu reduzieren.
-> Auch die Texturauflösung kann reduziert werden, der Einfluß auf die Dateigröße ist hier aber häufig geringer als im Falle der Geometrie.
->
-> ![Image](res/edit_remesh.png)
+![Image?](res/edit_outlier.png)
 
-> ***Textur- & Geometrie-Fehler***<br>
-> Treten bei der Rekonstruktion erkenntliche Fehler bei der Geometrie oder den Texturen auf, ist dies meist ein Indiz für schlechte Abdeckung der betreffenden Bereiche bei der Aufnahme, oder für problematisches Material (reflektive/transparente Objektteile). Durch einfache Nachbearbeitung ist dies kaum zu beheben, entweder müssen die fehlerhaften Bereiche in einem externen Programm manuell nachmodelliert werden, oder es wird eine Neuaufnahme versucht.
-> Eine dritte Option besteht hier je nach Software noch in der Erweiterung der bisherigen Aufnahme um zusätzliche Bilder. Polycam bietet dazu die **Extend**-Option an, die einen zurück in den Aufnahmemodus versetzt, bei der Modellberechnung aber vorhergehende Bilder miteinbezieht.
->
-> ![Image](res/edit_geometry_error.png)
-> ![Image](res/edit_extend_capture.png)
+#### ***Hintergrund***<br>
+Insbesondere bei der Photogrammetrie ohne *Object Masking* beinhaltet die rekonstruierte Szene meist noch Teile und Objekte des Hintergrundes (Tischplatte, Wände, zusätzliche Objekte).
+Sofern die Digitalisierung des gesamten Raumes bzw. der Gesamtszene jedoch nicht Ziel der Aufnahme war, ist es sinnvoll die Szene auf das gewünschte Objekt zu reduzieren.<br>
+Hierfür kann via **Crop** entweder eine Box oder ein Zylinder definiert und über die "Anfasser" angepasst werden, die ausschließlich das Objekt beinhalten, oder es werden über die **Crop Out** Option in mehreren Schritten einzelne unerwünschte Teile des Objektes weggeschnitten.
 
-> ***Dateiformat bei Export***<br>
-> Eine Weiterverwendung der Modells setzt selbstverständlich einen Export der Modelldatei voraus. Während eine nachträgliche Umwandlung zwischen Dateiformaten oft möglich ist, gehen in manchen Fällen bestimmte Informationen verloren.
-> Leider ist die Wahl des Exportformates in vielen Photogrammetrie-Apps ein kostenpflichtiges Feature - bei Polycam wird bspw. nur der Export als .glb/.gltf-Datei kostenfrei angeboten. Insbesondere für Weiterverwendung im Webkontext ist dieses Format inzwischen der de-facto Standart und kann problemlos für die Publikation des Objektes auf Webseiten oder Ähnlichem verwendet werden.
-> 
+![Image](res/crop_fix.gif)
+![Image](res/edit_crop_out.png)
 
+#### ***Farbe & Ton***<br>
+Ist die allgemeine Färbung des Objektes nicht zufriedenstellend, können gewisse Änderungen bzgl Farbsättigung, Kontrast, Temperatur etc. auch nachträglich noch unter **Color** angepasst werden.
+Sind jedoch nur stellenweise unerwünschte Verfärbungen oder Hell-Dunkel-Wechsel aufgetreten ist dies häufig ein Hinweis auf ungleiche/unausreichende Beleuchtung des Objektes bei der Aufnahme - derartige Fehler sind schwer nachträglich zu beheben und erfordern oft eine Neuaufnahme des Objektes.
+
+![Image](res/edit_tonemap.png)
+
+#### ***Geometrie-Auflösung/Dateigröße***<br>
+Je nach weiterem Verwendungszweck bestehen oft sehr spezifische Anforderungen an die Detail-Auflösung der Geometrie oder die allgemeine Dateigröße.<br>
+Die Auflösung im Nachhinein zu erhöhen ist allerdings nur schwer möglich und erfordert eine Neuberechnung des Modells mit anderen Detaileinstellungen und/oder mehr bzw. besseren Aufnahmebildern.<br>
+Eine Reduktion der Auflösung/Dateigröße um beispielsweise das Datenlimit einer Webseite zu erfüllen ist jedoch in fast jeder Photogrammetrie-Software nachträglich möglich.
+Hierzu kann in Polycam unter **Remesh** ein expliziter Reduktionsfaktor oder eine gewünschte Polygonzahl (Anzahl einzelner Flächen im *Mesh*) angegeben werden. Die Einstellung **Uniform** sorgt dabei für eine gleichmäßige Reduktion der Auflösung über das *Mesh* hinweg, während bei **Adaptive** versucht wird, an detailreichen Stellen des Objektes hohe Auflösung zu bewahren und sie an detailärmeren Stellen ausgleichend stärker zu reduzieren.
+Auch die Texturauflösung kann reduziert werden, der Einfluß auf die Dateigröße ist hier aber häufig geringer als im Falle der Geometrie.
+
+![Image](res/edit_remesh.png)
+
+#### ***Textur- & Geometrie-Fehler***<br>
+Treten bei der Rekonstruktion erkenntliche Fehler bei der Geometrie oder den Texturen auf, ist dies meist ein Indiz für schlechte Abdeckung der betreffenden Bereiche bei der Aufnahme, oder für problematisches Material (reflektive/transparente Objektteile). Durch einfache Nachbearbeitung ist dies kaum zu beheben, entweder müssen die fehlerhaften Bereiche in einem externen Programm manuell nachmodelliert werden, oder es wird eine Neuaufnahme versucht.
+Eine dritte Option besteht hier je nach Software noch in der Erweiterung der bisherigen Aufnahme um zusätzliche Bilder. Polycam bietet dazu die **Extend**-Option an, die einen zurück in den Aufnahmemodus versetzt, bei der Modellberechnung aber vorhergehende Bilder miteinbezieht.
+
+![Image](res/edit_geometry_error.png)
+![Image](res/edit_extend_capture.png)
+
+#### ***Dateiformat bei Export***<br>
+Eine Weiterverwendung der Modells setzt selbstverständlich einen Export der Modelldatei voraus. Während eine nachträgliche Umwandlung zwischen Dateiformaten oft möglich ist, gehen in manchen Fällen bestimmte Informationen verloren.
+Leider ist die Wahl des Exportformates in vielen Photogrammetrie-Apps ein kostenpflichtiges Feature - bei Polycam wird bspw. nur der Export als .glb/.gltf-Datei kostenfrei angeboten. Insbesondere für Weiterverwendung im Webkontext ist dieses Format inzwischen der de-facto Standart und kann problemlos für die Publikation des Objektes auf Webseiten oder Ähnlichem verwendet werden.
+ 
+#### Ausblick
 Wie bereits erwähnt ist insbesondere bei voll-automatisierter Photogrammetrie-Software sowohl der Bedarf nach Nachbearbeitung als auch die Möglichkeit dazu eher beschränkt. Viele Optimierungen werden auf sehr generelle Weise automatisch durchgeführt anstatt spezifische Einstellungen vom Nutzer zu erwarten oder zu verlangen. Umfangreichere, industrieller orientierte Software bietet hier mehr Freiheiten, fordert aber auch oft eine tiefergehende Auseinandersetzung mit der Software und den einzelnen Nachbearbeitungsschritten. Zusätzlich besteht unabhängig von der Photogrammetrie-Software noch die Möglichkeit zur Nachbearbeitung in externer 3D-Software. Zum Beispiel in der 3D-Modellierungs & Animations-Software **Blender** können alle beschriebenen und viele weitere Nach- und Weiterverarbeitungsschritte vorgenommen werden. Da jedoch ausschließlich die Photogrammetriesoftware selbst über die Rohdaten der Rekonstruktion verfügt, ist es empfehlenswert, alle möglichen Nachbearbeitungen bereits dort vorzunehmen.
 
 ## Part 3 - Publikation
