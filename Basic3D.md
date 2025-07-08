@@ -35,8 +35,8 @@ Willkommen zu unserer Basic-3D-Pipeline OER!
 Im Zuge dieses kleinen Tutorials wollen wir euch mit dem 3D-Digitalisierungsprozess in seiner einfachsten Form und den grundlegenden Prinzipien vertraut machen. 
 <br><br>
 Es werden daher keinerlei Grundkenntnisse vorausgesetzt und bedarf auch keiner kostenpflichtiger Software.<br>
-Die erzielten Resultate zwar schnell erstaunliche Qualität erreichen, bleiben aber natürlich hinter denen professioneller Digitalisierung zurück.<br>
-Um die Qualität der Ergebnisse zu steigern, empfehlen wir modular und schrittweise die eingesetzten Mittel und Methoden aufzuwerten (Aufnahmesetup, Rekonstruktionssoftware, Nachbearbeitung).
+Die erzielten Resultate können bereits sehr schnell erstaunliche Qualität erreichen, bleiben aber natürlich hinter den Möglichkeiten professioneller Digitalisierungsoftware & -prozesse zurück.<br>
+Wer im Nachgang das Bedürfnis verspürt, die Qualität seines Vorgehens und der Ergebnisse zu steigern, dem empfehlen wir an angebrachter Stelle auch modulare und schrittweise einsetzbare Aufwertungen der eingesetzten Mittel und Methoden (Aufnahmesetup, Rekonstruktionssoftware, Nachbearbeitung).
 
 <br><br>
 
@@ -53,14 +53,10 @@ Um die Qualität der Ergebnisse zu steigern, empfehlen wir modular und schrittwe
   </div>
 </div>
 
-## Einführung
-
-TODO - Hier muss noch ein bisschen Text rein
-
 #### Was ist unser Ziel?
 
 Diese Lernressource ist offensichtlich nicht für Leute gedacht, die in ihrem Arbeitsalltag bereits erfolgreich und routiniert 3D-Digitalisate erschaffen.
-Wir hoffen an dieser Stelle alle, die das Thema 3D-Digitalisierung zwar mit Interesse betrachten, aber vielleicht auch mit großem Respekt oder Unverständnis bisher umgehen, davon Überzeugen zu können, dass der schwierigste Schritt schon mit dem bloßen Anfangen geschafft ist. Um an das heranzuführen und zur 3D-Digitalisierung zu motivieren, versuchen wir hier gemeinsam:
+Wir hoffen an dieser Stelle alle, die das Thema 3D-Digitalisierung zwar mit Interesse betrachten, aber vielleicht auch mit großem Respekt oder Unverständnis bisher umgehen, davon Überzeugen zu können, dass der schwierigste Schritt schon mit dem bloßen Anfangen geschafft sein kann. Um an die Methodik heranzuführen und zur 3D-Digitalisierung zu motivieren, versuchen wir hier gemeinsam:
 
 - Das Konzept und die Technik hinter der 3D-Digitalisierung mittels Photogrammetrie zu verstehen
 - Mit den grundlegenden Arbeitsschritten und Prozessen der Digitalisierung bekannt zu werden
