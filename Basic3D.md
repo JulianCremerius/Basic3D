@@ -14,7 +14,11 @@ mode: Textbook
 
 dark: false
 
-theme-color: yellow
+language: de
+
+@onload
+window.LIA.settings.theme = "yellow"
+@end
 
 
 -->
@@ -97,6 +101,7 @@ Wir hoffen, durch unsere Wahl einen reibungslosen Ablauf und schnelle Erfolge be
 
 Im ersten Kapitel des Tutorials beschäftigen wir uns mit dem Aufnahmeprozess selbst. Um die Funktionsweise und Limitationen der Methode zu verstehen, schauen wir uns zuerst die Algorithmik an, die der Photogrammetrie zugrunde liegt.
 Danach folgen einige notwendige Vorbereitungsschritte, bevor wir uns schlussendlich dem Aufnahmprozess selbst widmen.
+
 
 #### Theorie-Einblick
 
@@ -423,7 +428,10 @@ Sofern die Digitalisierung des gesamten Raumes bzw. der Gesamtszene jedoch nicht
 Hierfür kann via **Crop** entweder eine Box oder ein Zylinder definiert und über die "Anfasser" angepasst werden, die ausschließlich das Objekt beinhalten, oder es werden über die **Crop Out** Option in mehreren Schritten einzelne unerwünschte Teile des Objektes weggeschnitten.
 
 ![Image](res/crop_fix.gif)
-![Image](res/edit_crop_out.png)
+
+<!--- 
+  ![Image](res/edit_crop_out.png) 
+--->
 
 #### ***Farbe & Ton***<br>
 Ist die allgemeine Färbung des Objektes nicht zufriedenstellend, können gewisse Änderungen bzgl Farbsättigung, Kontrast, Temperatur etc. auch nachträglich noch unter **Color** angepasst werden.
@@ -455,6 +463,11 @@ Leider ist die Wahl des Exportformates in vielen Photogrammetrie-Apps ein kosten
 Wie bereits erwähnt ist insbesondere bei voll-automatisierter Photogrammetrie-Software sowohl der Bedarf nach Nachbearbeitung als auch die Möglichkeit dazu eher beschränkt. Viele Optimierungen werden auf sehr generelle Weise automatisch durchgeführt anstatt spezifische Einstellungen vom Nutzer zu erwarten oder zu verlangen. Umfangreichere, industrieller orientierte Software bietet hier mehr Freiheiten, fordert aber auch oft eine tiefergehende Auseinandersetzung mit der Software und den einzelnen Nachbearbeitungsschritten. Zusätzlich besteht unabhängig von der Photogrammetrie-Software noch die Möglichkeit zur Nachbearbeitung in externer 3D-Software. Zum Beispiel in der 3D-Modellierungs & Animations-Software **Blender** können alle beschriebenen und viele weitere Nach- und Weiterverarbeitungsschritte vorgenommen werden. Da jedoch ausschließlich die Photogrammetriesoftware selbst über die Rohdaten der Rekonstruktion verfügt, ist es empfehlenswert, alle möglichen Nachbearbeitungen bereits dort vorzunehmen.
 
 ## Part 3 - Publikation
+
+Im letzten Kapitel dieses kleinen Tutorials wollen wir uns noch mit der Publikation von 3D-Modellen im Web beschäftigen.
+Insbesondere im Vergleich mit anderweitigen Digitalisaten sind 3D-Modelle sehr anschaulich und greifbar - dadurch eignen sie sich äußerst gut für die Repräsentation einer Sammlung der allgemeinen Öffentlichkeit gegenüber.
+Durch Vertretung der Sammlung auf großen 3D-Webportalen wie **Sketchfab**, die viel Öffentlichkeitsverkehr erleben, kann auch Aufmerksamkeit in neuen Zielgruppen generiert werden.
+Wir betrachten im Folgenden daher die Publikation von 3D-Modellen auf **Sketchfab** und setzen uns zuletzt noch mit alternativen Möglichkeiten der Webpublikation auseinander.
 
 #### Weiterverwendung von 3D-Modellen
 
@@ -523,9 +536,4 @@ Folgende Kriterien können beispielsweise ausschlaggebend sein:
 > - Große IT-Kompetenzen/IT-Abteilung? -> Auf Basis von **three.js** oder sogar dem darunterliegenden **WebGL** können vollkommen frei 3D-Webanwendungen entwickelt werden
 
 
-
-
-
-
-## Ausblick
 
