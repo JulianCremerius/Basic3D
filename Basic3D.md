@@ -286,7 +286,7 @@ Eine leergeräumte Tischplatte reicht vorerst vollkommen als Hinter- bzw. Unterg
 
   <div style="float:right;width:15%;margin: 5px 20px 20px 0px;">
     <img src="res/poly_start.jpg" alt="Der Aufnahmeprozess" style=""/>
-    <p style="text-align:center"> *PLATZHALTER für Capturing-gif* </p>
+    <p style="text-align:center"> *TODO -> Capturing-gif* </p>
   </div>
 
 <p style="text-align:center"> Wie nehme ich auf?
@@ -377,20 +377,25 @@ Je nach Verwendungszweck kann die Nachbearbeitung im "Low-End"- & Hobbybereich d
 Auch wenn das erzeugte Modell auf den ersten Blick gut rekonstruiert scheint, gibt es noch einige Anhaltspunkte, die geprüft und bei Bedarf nachgebessert werden sollten, um das Digitalisat weiterverwendbar zu machen.
 Die häufigsten Problemfälle & Optimierungsmöglichkeiten und wie wir mit ihnen umgehen können wollen wir uns jetzt genauer anschauen.
 
-Um das Objekt genauer zu betrachten und zu verändern, wählen wir es aus der Projektgallerie aus und kommen dadurch in das Bearbeitunsmenü.
+Um das Objekt genauer zu betrachten und zu verändern, wählen wir es aus der Projektgallerie aus und kommen dadurch in das Bearbeitungsmenü.
 
 Tipp: Polycam besitzt auch ein [Webinterface](https://poly.cam). Wenn ihnen ein Desktop-PC oder Laptop zur Verfügung steht haben sie auch dort Zugriff auf alle bereits an den Server übermittelten Projekte. Die Nachbearbeitung ist hierüber meist angenehmer als über einen Smartphone-Touchscreen.
 
+<!---
 ![Image](res/edit_mode.png)
+--->
 
-#### ***Origin***<br>
+#### Origin<br>
 Der sogenannte *Origin* (= Ursprung) oder Mittelpunkt des Objektes liegt manchmal nicht im Zentrum der 3D-Szene.
 Dies ist ein eher seltenes Problem bei automatisierten Photogrammetrie-Pipelines und kann daher z.B. in Polycam nicht bearbeitet werden.
-Wichtig für den Import des Modells in andere Software.<br><br>
+Ein korrekt gesetzer *Origin* ist wichtig beim Import des Modells in andere Software.<br><br>
 
-![Image](res/edit_translate.png)
+<div>
+    <img src="res/wrong_origin.gif" alt="Import eines Modells mit fehlerhaftem *Origin* in Blender" style="float:left;width:48%"/>
+    <img src="res/right_origin.gif" alt="Import eines Modells mit korrigiertem *Origin* in Blender" style="float:right;width:48%"/>
+</div>
 
-#### ***Rotation***<br>
+#### Rotation<br>
 Ähnlich zum *Origin* ist auch die Orientierung des Objektes oft unerwartet im Verhältnis zu den Hauptachsen der 3D-Szene.
 Da die Software meist nicht von selbst feststellen kann, wo bspw. "oben" ist, wird die Rotation z.T. arbiträr gesetzt, dadurch entsteht unerwünschtes Verhalten beim Drehen und Bewegen des Objektes und beim Import in andere 3D-Software.<br>
 Hier gibt uns Polycam die Möglichkeit, das Objekt neu zu Orientieren. Dazu einfach unter **Rotate** das Objekt mittels der bunten "Anfasser" drehen, bis die gewünschte Orientierung im Bezug zu der Bodenfläche (graues Gitter) erreicht ist. Wird die Änderung angewendet, sollte ein merklich natürlicheres Rotationsverhalten bei Betrachtung zu beobachten sein.
@@ -407,18 +412,18 @@ Hier gibt uns Polycam die Möglichkeit, das Objekt neu zu Orientieren. Dazu einf
   <p style="float:left;width:30%;margin-left:5%;text-align:center;">After</p>
 </div>
 
-#### ***Skalierung***<br>
+#### Skalierung<br>
 Auch die Größe des Originalobjekts ist häufig nicht korrekt im 3D-Modell abgebildet. Dies ist abermals beim Import in andere 3D-Szenen ein Problem, aber auch bspw. bei der Analyse und Beforschung eines digitalisierten Objekts.
 Zur Korrektur können unter **Rescale** Punkte auf dem Modell ausgewählt werden, deren reale Distanz voneinander bekannt ist bzw. ausgemessen wurde (Bei professioneller Anwendung werden hierfür standartisierte Marker am oder neben dem Objekt angebracht). Die Distanz der Punkte in der digitalen Szene kann dann dementsprechend angepasst werden. Die Bearbeitung hat keine offensichtlichen Folgen in der 3D-Ansicht, wohl aber auf den Export des Modells.
 
 ![Image](res/scale_fix.gif)
 
-#### ***Outlier***<br>
+#### Outlier<br>
 Als *Outlier* (= Ausreißer) versteht man bei 3D-Modellen einzelne Punkte, Kanten oder Flächen (die Grundbausteine eines *Meshes*), die nicht mit dem Hauptobjekt verbunden sind - diese Artefakte entstehen entweder aus falsch erkannten *Features* bei der Modellberechnung oder später bei der Umwandlung der Punktewolke zum *Mesh*. Eine grundlegendes *Outlier Removal* wird von den meisten Photogrammetrie-Apps standartmäßig durchgeführt. Darüber hinaus gibt es in Polycam keine manuelle Bearbeitungsmöglichkeit.
 
 ![Image?](res/edit_outlier.png)
 
-#### ***Hintergrund***<br>
+#### Hintergrund<br>
 Insbesondere bei der Photogrammetrie ohne *Object Masking* beinhaltet die rekonstruierte Szene meist noch Teile und Objekte des Hintergrundes (Tischplatte, Wände, zusätzliche Objekte).
 Sofern die Digitalisierung des gesamten Raumes bzw. der Gesamtszene jedoch nicht Ziel der Aufnahme war, ist es sinnvoll die Szene auf das gewünschte Objekt zu reduzieren.<br>
 Hierfür kann via **Crop** entweder eine Box oder ein Zylinder definiert und über die "Anfasser" angepasst werden, die ausschließlich das Objekt beinhalten, oder es werden über die **Crop Out** Option in mehreren Schritten einzelne unerwünschte Teile des Objektes weggeschnitten.
@@ -429,34 +434,40 @@ Hierfür kann via **Crop** entweder eine Box oder ein Zylinder definiert und üb
   ![Image](res/edit_crop_out.png) 
 --->
 
-#### ***Farbe & Ton***<br>
+#### Farbe & Ton<br>
 Ist die allgemeine Färbung des Objektes nicht zufriedenstellend, können gewisse Änderungen bzgl Farbsättigung, Kontrast, Temperatur etc. auch nachträglich noch unter **Color** angepasst werden.
 Sind jedoch nur stellenweise unerwünschte Verfärbungen oder Hell-Dunkel-Wechsel aufgetreten ist dies häufig ein Hinweis auf ungleiche/unausreichende Beleuchtung des Objektes bei der Aufnahme - derartige Fehler sind schwer nachträglich zu beheben und erfordern oft eine Neuaufnahme des Objektes.
 
 ![Image](res/edit_tonemap.png)
 
-#### ***Geometrie-Auflösung/Dateigröße***<br>
+#### Geometrie-Auflösung/Dateigröße<br>
 Je nach weiterem Verwendungszweck bestehen oft sehr spezifische Anforderungen an die Detail-Auflösung der Geometrie oder die allgemeine Dateigröße.<br>
 Die Auflösung im Nachhinein zu erhöhen ist allerdings nur schwer möglich und erfordert eine Neuberechnung des Modells mit anderen Detaileinstellungen und/oder mehr bzw. besseren Aufnahmebildern.<br>
 Eine Reduktion der Auflösung/Dateigröße um beispielsweise das Datenlimit einer Webseite zu erfüllen ist jedoch in fast jeder Photogrammetrie-Software nachträglich möglich.
-Hierzu kann in Polycam unter **Remesh** ein expliziter Reduktionsfaktor oder eine gewünschte Polygonzahl (Anzahl einzelner Flächen im *Mesh*) angegeben werden. Die Einstellung **Uniform** sorgt dabei für eine gleichmäßige Reduktion der Auflösung über das *Mesh* hinweg, während bei **Adaptive** versucht wird, an detailreichen Stellen des Objektes hohe Auflösung zu bewahren und sie an detailärmeren Stellen ausgleichend stärker zu reduzieren.
-Auch die Texturauflösung kann reduziert werden, der Einfluß auf die Dateigröße ist hier aber häufig geringer als im Falle der Geometrie.
+
+> *Achtung - Dieses Bearbeitungsfeature ist ****nicht**** Teil der kostenlosen Features von Polycam!*<br><br>
+> *Für die Laienhafte Anwendung der Photogrammetrie und Weiterverwendung der Modelle ist eine Reduktion der Geometrie-Auflösung aber auch oft noch nicht notwendig - Der Bedarf besteht insbesondere bei sehr hochaufgelösten Modellen die nachfolgend für die Webpublikation optimiert werden sollen.*
+> 
+> In Polycam kann unter **Remesh** ein expliziter Reduktionsfaktor oder eine gewünschte Polygonzahl (Anzahl einzelner Flächen im *Mesh*) angegeben werden. Die Einstellung **Uniform** sorgt dabei für eine gleichmäßige Reduktion der Auflösung über das *Mesh* hinweg, während bei **Adaptive** versucht wird, an detailreichen Stellen des Objektes hohe Auflösung zu bewahren und sie an detailärmeren Stellen ausgleichend stärker zu reduzieren.
+> Auch die Texturauflösung kann reduziert werden, der Einfluß auf die Dateigröße ist hier aber häufig geringer als im Falle der Geometrie.
 
 ![Image](res/edit_remesh.png)
 
-#### ***Textur- & Geometrie-Fehler***<br>
+#### Textur- & Geometrie-Fehler<br>
 Treten bei der Rekonstruktion erkenntliche Fehler bei der Geometrie oder den Texturen auf, ist dies meist ein Indiz für schlechte Abdeckung der betreffenden Bereiche bei der Aufnahme, oder für problematisches Material (reflektive/transparente Objektteile). Durch einfache Nachbearbeitung ist dies kaum zu beheben, entweder müssen die fehlerhaften Bereiche in einem externen Programm manuell nachmodelliert werden, oder es wird eine Neuaufnahme versucht.
-Eine dritte Option besteht hier je nach Software noch in der Erweiterung der bisherigen Aufnahme um zusätzliche Bilder. Polycam bietet dazu die **Extend**-Option an, die einen zurück in den Aufnahmemodus versetzt, bei der Modellberechnung aber vorhergehende Bilder miteinbezieht.
+Eine dritte Option besteht hier je nach Software noch in der Erweiterung der bisherigen Aufnahme um zusätzliche Bilder. Polycam bietet dazu die **Extend**-Option an, die einen zurück in den Aufnahmemodus versetzt, bei der Modellberechnung aber vorhergehende Bilder miteinbezieht.<br><br>
 
-![Image](res/edit_geometry_error.png)
-![Image](res/edit_extend_capture.png)
+<div>
+    <img src="res/nike_error.png" alt="Geometrie- & Texturfehler aufgrund unpräziser Rekonstruktion" style="float:left;width:48%"/>
+    <img src="res/camera_error.png" alt="Rekonstruktionsfehler aufgrund der Reflektivität der Linse " style="float:right;width:48%"/>
+</div>
 
-#### ***Dateiformat bei Export***<br>
+#### Dateiformat bei Export<br>
 Eine Weiterverwendung der Modells setzt selbstverständlich einen Export der Modelldatei voraus. Während eine nachträgliche Umwandlung zwischen Dateiformaten oft möglich ist, gehen in manchen Fällen bestimmte Informationen verloren.
 Leider ist die Wahl des Exportformates in vielen Photogrammetrie-Apps ein kostenpflichtiges Feature - bei Polycam wird bspw. nur der Export als .glb/.gltf-Datei kostenfrei angeboten. Insbesondere für Weiterverwendung im Webkontext ist dieses Format inzwischen der de-facto Standart und kann problemlos für die Publikation des Objektes auf Webseiten oder Ähnlichem verwendet werden.
  
 #### Ausblick
-Wie bereits erwähnt ist insbesondere bei voll-automatisierter Photogrammetrie-Software sowohl der Bedarf nach Nachbearbeitung als auch die Möglichkeit dazu eher beschränkt. Viele Optimierungen werden auf sehr generelle Weise automatisch durchgeführt anstatt spezifische Einstellungen vom Nutzer zu erwarten oder zu verlangen. Umfangreichere, industrieller orientierte Software bietet hier mehr Freiheiten, fordert aber auch oft eine tiefergehende Auseinandersetzung mit der Software und den einzelnen Nachbearbeitungsschritten. Zusätzlich besteht unabhängig von der Photogrammetrie-Software noch die Möglichkeit zur Nachbearbeitung in externer 3D-Software. Zum Beispiel in der 3D-Modellierungs & Animations-Software **Blender** können alle beschriebenen und viele weitere Nach- und Weiterverarbeitungsschritte vorgenommen werden. Da jedoch ausschließlich die Photogrammetriesoftware selbst über die Rohdaten der Rekonstruktion verfügt, ist es empfehlenswert, alle möglichen Nachbearbeitungen bereits dort vorzunehmen.
+Wie bereits erwähnt ist insbesondere bei voll-automatisierter Photogrammetrie-Software sowohl der Bedarf nach Nachbearbeitung als auch die Möglichkeit dazu eher beschränkt. Viele Optimierungen werden auf sehr generelle Weise automatisch durchgeführt anstatt spezifische Einstellungen vom Nutzer entgegenzunehmen oder zu verlangen. Umfangreichere, industrieller orientierte Software bietet hier mehr Freiheiten, fordert aber auch oft eine tiefergehende Auseinandersetzung mit der Software und den einzelnen Nachbearbeitungsschritten. Zusätzlich besteht unabhängig von der Photogrammetrie-Software noch die Möglichkeit zur Nachbearbeitung in externer 3D-Software. Zum Beispiel in der 3D-Modellierungs & Animations-Software **Blender** können alle beschriebenen und viele weitere Nach- und Weiterverarbeitungsschritte vorgenommen werden. Da jedoch ausschließlich die Photogrammetriesoftware selbst über die Rohdaten der Rekonstruktion verfügt, ist es empfehlenswert, alle möglichen Nachbearbeitungen bereits dort vorzunehmen. Je nach Exportformat gehen ansonsten Teilinformationen verloren, wodurch die mögliche Qualität einer externen Nachbearbeitung eingeschränkt werden kann.
 
 ## Part 3 - Publikation
 
