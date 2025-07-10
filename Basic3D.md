@@ -55,30 +55,33 @@ Wer im Nachgang das Bedürfnis verspürt, die Qualität seines Vorgehens und der
 
 #### Was ist unser Ziel?
 
-Diese Lernressource ist offensichtlich nicht für Leute gedacht, die in ihrem Arbeitsalltag bereits erfolgreich und routiniert 3D-Digitalisate erschaffen.
-Wir hoffen an dieser Stelle alle, die das Thema 3D-Digitalisierung zwar mit Interesse betrachten, aber vielleicht auch mit großem Respekt oder Unverständnis bisher umgehen, davon Überzeugen zu können, dass der schwierigste Schritt schon mit dem bloßen Anfangen geschafft sein kann. Um an die Methodik heranzuführen und zur 3D-Digitalisierung zu motivieren, versuchen wir hier gemeinsam:
+Der 3D-Digitalisierung wird vielerseits noch mit viel Unverständnis und großem Respekt begegnet. Die damit einhergende technische Herausforderung kann schnell abschreckend erscheinen. Wir wollen mit dieser Ressource allen, die sich in dieser Situation wiederfinden einen Einblick und Zugang zur angewandten 3D-Digitalisierung an die Hand geben. Auch wenn es bei der professionellen Anwendung durchaus Hürden zu überwinden gibt, ist der wichtigste und vielleicht schwierigste Schritt auf dem Weg dorthin, den Anfang zu wagen.
+Im Folgenden befassen wir uns mit der zugänglichsten und wohl verbreitetsten Methode, der Photogrammetrie.
+Um an die entsprechende Methodik heranzuführen und zur 3D-Digitalisierung zu motivieren, versuchen wir daher gemeinsam:
 
-- Das Konzept und die Technik hinter der 3D-Digitalisierung mittels Photogrammetrie zu verstehen
-- Mit den grundlegenden Arbeitsschritten und Prozessen der Digitalisierung bekannt zu werden
-- Ansatzpunkt & Motivation zu bekommen um in Zukunft auch selber Photogrammetrie einzusetzen
-- Interesse wecken und Ausblicke geben, nicht nur zum Einsetzen, sondern auch zum Vertiefen und modularen Verbessern des eigenen Arbeitsprozesses
+- Das Konzept und die Algorithmik hinter der 3D-Digitalisierung mittels Photogrammetrie zu verstehen
+- Mit den grundlegenden Arbeitsschritten und Prozessen der 3D-Digitalisierung bekannt zu werden
+- Einen Ansatzpunkt & Motivation zu bekommen um in Zukunft auch selbst Photogrammetrie einzusetzen
+- Interesse zu wecken und Ausblicke geben, um Photogrammetrie nicht nur Einzusetzen, sondern auch in Zukunft weiter zu Vertiefen und den eigenen Arbeitsprozess modular zu verbessern
+  
+Diese Lernressource ist nicht an Leute gerichtet, die in ihrem Arbeitsalltag bereits erfolgreich und routiniert 3D-Digitalisate erschaffen.
 
 #### Der Weg zum professionellen Digitalisieren
 
-Auch wenn der Umfang des Tutorials im Sinne der Einsteigerfreundlichkeit überschaubar gewählt ist, versuchen wir den 3D-Digitalisierungsprozess in seiner Gänze zu umreißen und sprechen bisweilen Arbeitsschritte an,
-die für erste Versuche & Hobbymäßige Aufnahmen nicht vonnöten sind, im Übergang hin zu professionellem Einsatz aber stark an Relevanz gewinnen.
+Auch wenn der Umfang des Tutorials im Sinne der Einsteigerfreundlichkeit überschaubar gewählt ist, versuchen wir den 3D-Digitalisierungsprozess in seiner Gänze zu umreißen.  Wir sprechen daher bisweilen Arbeitsschritte an,
+die für erste Versuche & Hobbymäßige Aufnahmen nicht vonnöten sein mögen, im Übergang hin zum professionellem Einsatz aber stark an Relevanz gewinnen.
 
 Der Prozess ist der Übersicht halber in drei Arbeitsschritte aufgeteilt - Die Aufnahme, die Nachbearbeitung & die Publikation des Modells.
-Als Konzept für den weiterführenden Einstieg in die professionellen Digitalisierungsarbeit empfehlen wir, die einzelnen Arbeitsschritte mit steigendem Qualitätsanspruch modular auszubauen und die verwendete Soft- & Hardware schrittweise durch hochwertigere Alternativen zu ersetzen. Der Digitalisierungsprozess kann mit nahezu unbegrenztem Aufwand und Mitteleinsatz durchgeführt werden, oft ist gewünschte oder notwendige Qualität aber bereits mit erstaunlich moderatem Einsatz erreichbar.
+Für den weiterführenden Einstieg in die professionellen Digitalisierungsarbeit empfehlen wir, die einzelnen Schritte des dargestellten Arbeitsablaufs mit steigendem Qualitätsanspruch modular auszubauen und die verwendete Soft- & Hardware schrittweise durch hochwertigere Alternativen zu ersetzen. Der Digitalisierungsprozess kann mit nahezu unbegrenztem Aufwand und Mitteleinsatz durchgeführt werden. In vielen Fällen ist die gewünschte oder notwendige Qualität aber bereits mit moderatem Einsatz erreichbar.
 
 #### Wieso PolyCam & Sketchfab?
 
 Wir verwenden im Laufe des Tutorials sowohl die Smartphone-App [**Polycam**](https://poly.cam) als auch den Webservice [**Sketchfab**](https://sketchfab.com). <br><br><img src="res/Polycam_logo.svg" alt="" style="float:right;width:33%">
 Während beiderlei Software kostenpflichtige Features hinter Abonnements zurückhalten, empfehlen und verlangen wir in diesem Tutorial ***nicht*** den Abschluss eines solchen Abonnements - alle im Folgenden notwendigen Features stehen vollkommen kostenfrei zur Verfügung und verlangen lediglich die Erstellung eines jeweiligen Benutzeraccounts.<br> 
-Aus diesem Grund präsentieren und besprechen wir zu beiden Programmen Alternativen, die bei Bedarf ebenfalls eingesetzt werden können - einige Arbeitsschritte unterscheiden sich in diesem Falle natürlich.<br><br>
+Aus diesem Grund präsentieren und besprechen wir zu beiden Programmen Alternativen, die bei Bedarf ebenfalls eingesetzt werden können - einige Arbeitsschritte unterscheiden sich in diesem Fall natürlich.<br><br>
 
 <img src="res/sketchfab-logo-text.png" alt="" style="float:right;width:30%;margin-bottom:20px">
-Es besteht keine Kooperation mit den Diensten und besteht weiterhin auch keine kommerzielle Empfehlung der Dienste unsererseits. Die Festlegung auf spezifische Dienste dient einzig und allein der konsistenten Darstellung von spezifischen Use-Case Beispielen.<br> 
+Es besteht weder eine Kooperation mit den verwendeten Diensten eine kommerzielle Empfehlung der Dienste unsererseits. Die Festlegung auf spezifische Dienste dient ausschließlich der konsistenten Darstellung von spezifischen Anwendungsbeispielen.<br> 
 Grund für die Wahl der betreffenden Software ist unser primäres Ziel der Bekanntmachung & Vorstellung der Methodik.
 Da es sich dementsprechend um ein Einsteiger- und Ausprobier-Tutorial handelt sollen keine Kosten & minimaler Aufwand hervorgerufen werden (reine Open-Source Software ist häufig Einarbeitunsintensiv).
 Um weiterhin keine Anforderungen im Bezug auf teure & leistungsfähige Hardware zu stellen, beschränken wir uns auf Smartphone-Apps & Web-Apps, die auf jedem mobilen Gerät verwendet werden können.
@@ -101,9 +104,9 @@ Danach folgen einige notwendige Vorbereitungsschritte, bevor wir uns schlussendl
 {{0-1}}
 **********
 Hinter jeder herkömmlichen Photogrammetrie-Software versteckt sich die sogenannte *Structure-from-Motion*  Methode.
-Im Folgenden geben wir einen kleinen Überblick über die grundlegende Algorithmik - ein tieferes technisches Verständnis der Methodik ist für die 3D-Modell-Aufnahme zwar nicht zwingend notwendig, aber kann oft helfen, Fehler und entsprechende Fehlerquellen bei der Anwendung schnell zu identifizieren und zu vermeiden.
+Im Folgenden geben wir einen kleinen Überblick über die grundlegende Algorithmik - ein tieferes technisches Verständnis der Methodik ist für die 3D-Modell-Aufnahme zwar nicht zwingend notwendig, kann aber oft helfen, Fehler und entsprechende Fehlerquellen bei der Anwendung schnell zu identifizieren und zu vermeiden.
 <br><br>
-*Structure-from-Motion* (*SfM*), also 'Struktur aus Bewegung', beziehungsweise etwas freier übersetzt - 'Formerkennung durch Betrachtung aus verschiedenen Perspektiven' bezeichnet das allgemeine Konzept, die 3-dimensionale Form & Geometrie eines Objekts auf Basis mehrerer 2-dimensionaler Beobachtungen herauszufinden bzw. zu berechnen. In der *Computer Vision*-Forschung hat sich hierfür ein ganz bestimmter Prozess etabliert, den wir uns nun genauer anschauen wollen.
+*Structure-from-Motion* (*SfM*), also 'Struktur aus Bewegung' (bzw. frei übersetzt und ausführlicher - 'Erkennung 3-dimensionaler Strukturen durch Betrachtung aus verschiedenen Perspektiven') bezeichnet das allgemeine Problem, die 3-dimensionale Form & Geometrie eines Objekts auf Basis mehrerer 2-dimensionaler Beobachtungen herausfinden bzw. berechnen zu können. In der *Computer Vision*-Forschung hat sich hierfür ein gefestigter, computergestützter Prozess etabliert, den wir uns nun genauer anschauen wollen.
 
 ---
 <br><br>
@@ -111,7 +114,7 @@ Im Folgenden geben wir einen kleinen Überblick über die grundlegende Algorithm
 
 {{1-2}}
 **********
-Wie aus der Methoden-Bezeichnung bereits hervorgeht, ist für die *SfM*-Aufnahme alse eine Reihe von regulären 2D-Fotoaufnahmen notwendig.
+Wie aus der Methoden-Bezeichnung bereits hervorgeht, ist für die *SfM*-Aufnahme eine Reihe von regulären 2D-Fotoaufnahmen notwendig.
 Es handelt sich im Grunde um klassische Objektphotographie, die aus mehreren Blickwinkeln wiederholt wird, bis eine ausreichende Abdeckung des Objekts aus allen Richtung erreicht ist. (Die Fotografischen Standards & Anforderungen unterscheiden sich jedoch etwas von denen der klassischen Objektphotographie.) <br><br><br>
 
 <div style="overflow:auto">
@@ -125,7 +128,7 @@ Es handelt sich im Grunde um klassische Objektphotographie, die aus mehreren Bli
 
 {{2-3}}
 **********
-Bevor das Modell selber aber berechnet werden kann, fehlt an dieser Stelle noch eine wichtige Information - In welchem räumlichen Verhältnis stehen die einzelnen Kameraperspektiven zueinander?
+Bevor das Modell selbst aber berechnet werden kann, fehlt an dieser Stelle noch eine wichtige Information - In welchem räumlichen Verhältnis stehen die einzelnen Kameraperspektiven zueinander?
 Da entweder die Kamera oder das Objekt zwischen den Aufnahmen bewegt werden muss und eine technische Messung der Bewegungen häufig nicht akkurat genug ist, wird versucht diese räumlichen Verhältnisse aus den Bildern selbst zu bestimmen. <br><br><br>
 
 <div style="overflow:auto">
@@ -133,19 +136,23 @@ Da entweder die Kamera oder das Objekt zwischen den Aufnahmen bewegt werden muss
     <img src="res/triangulation_photo.svg" alt="Lösungsansatz der Photogrammetrie" style="float:right;width:40%"/>
 </div>
 
+<!--- TODO: subtitles with explanation--->
+
 ---
 <br><br>
 **********
 
 {{3-4}}
 **********
-Für diese Berechnung ist es notwendig, visuelle *Features* (= Merkmale) der abgebildeten Szene in einer Vielzahl verschiedener Bilder wiederzuerkennen. Hier kommen daher sogenannte *Feature Detection*-Algorithmen zum Einsatz, insbesondere *SIFT* (= *Scale-invariant feature transform*, optimiert für Wiedererkennung von Merkmalen trotz verschiedener Größen/Rotation/Belichtung) oder *SURF* (= *Sped-up robust features*, ein Kompromiss zwischen schnellerer Laufzeit und robusten Ergebnissen). Das Ergebnis dieser *Feature Detection* sieht wie folgt aus: <br><br><br>
+Für diese Berechnung ist es notwendig, visuelle *Features* (= Merkmale) der abgebildeten Szene in einer Vielzahl verschiedener Bilder wiederzuerkennen. Hierfür kommen sogenannte *Feature Detection*-Algorithmen zum Einsatz, insbesondere *SIFT* (= *Scale-invariant feature transform*, optimiert für Wiedererkennung von Merkmalen trotz verschiedener Größen/Rotation/Belichtung) oder *SURF* (= *Sped-up robust features*, ein Kompromiss zwischen schnellerer Laufzeit und robusten Ergebnissen). Das Ergebnis dieser *Feature Detection* sieht wie folgt aus: <br><br><br>
 
 {{3-4}}
 <div style="overflow:auto">
     <img src="res/features_1.png" alt="SIFT Feature Detection (Bsp 1)" style="float:left;width:48%;"/>
     <img src="res/features_2.png" alt="SIFT Feature Detection (Bsp 2)" style="float:right;width:48%;"/>
 </div>
+
+<!--- TODO: subtitles with explanation--->
 
 ---
 <br><br>
@@ -159,6 +166,8 @@ Da all diese *Features* aufgrund ihres hohen Wiedererkennungswertes ausgesucht w
     <img src="res/matching.png" alt="SIFT Feature Matching" style="float:center;width:100%;"/>
 </div>
 
+<!--- TODO: subtitles with explanation--->
+
 ---
 <br><br>
 **********
@@ -169,14 +178,14 @@ Ausgehend von einer beliebigen Kameraperspektive und den erkannten *Features*, w
 
 {{5-6}}
 **********
-1. Die räumlichen Verhältnisse zwischen den Kameras 
+* Die räumlichen Verhältnisse zwischen den Kameras 
 
 ![SfM-Rekonstruktion der Szene](res/sfm_result.png)
 **********
 
 {{6-7}}
 **********
-2. Die sog. *Sparse Point Cloud* (= dünn besetzte Punktewolke)
+* Die sog. *Sparse Point Cloud* (= dünn besetzte Punktewolke)
 
 ![Die *Sparse Point Cloud*](res/sparse_pc.png)
 
@@ -206,6 +215,8 @@ Nachdem das *Mesh* berechnet wurde und die Texturen darauf projiziert wurden, er
     <img src="res/textures.png" alt="Projektion der Farbtextur auf das *Mesh*" style="float:right;width:48%"/>
 </div>
 
+<!--- TODO: subtitles with explanation--->
+
 ---
 <br><br>
 **********
@@ -217,15 +228,15 @@ Setup einer Aufnahme-App
 ===
 
 
-Bevor wir uns mit der 3D-Aufnahme selber beschäftigen können, braucht es selbstverständlich ein Aufnahme-Setup. <br>
-Im Falle der Photogrammetrie kann so ein Aufnahme-Setup zwar fast beliebig aufwendig und teuer werden (DSLR Kamera, Studio-Beleuchtung, Polfilter, mech. Drehteller, etc), aber zum Glück auch fast beliebig schlicht gehalten werden. <br>
+Bevor wir uns mit der 3D-Aufnahme selbst beschäftigen können, braucht es nun selbstverständlich ein Aufnahme-Setup. <br>
+Im Falle der Photogrammetrie kann so ein Aufnahme-Setup zwar fast beliebig aufwendig und teuer werden (DSLR Kamera, Studio-Beleuchtung, Polfilter, elektr. Drehteller, etc), aber zum Glück auch fast beliebig schlicht gehalten werden. <br>
 Die einzige unabdingbare Voraussetzung ist eine Kamera - über die bereits jedes heutige Smartphone verfügt.
-<br><br>
+<br><br> <!--- TODO: restructure? --->
 Wir könnten also direkt anfangen und eine Reihe Photos mit dem Smarthphone machen, die wir dann später an eine Photogrammetrie-Software (wie z.B. **MetaShape**, **RealityCapture**) weitergeben, um uns ein Modell zu berechnen.<br>
 Inzwischen gibt es allerdings auch viele benutzerfreundliche, Smartphone-basierte Photogrammetrie-Apps, die den ganzen Prozess von Aufnahme bis zum (nachbearbeiteten) Modell integrieren.
 <br><br>
 In dieser Demo verwenden wir daher solch eine App, **Polycam**. Aber auch **RealityScan**, **KIRI Engine** oder **Scaniverse** stehen hier als vergleichbare Alternativen mit kleineren Unterschieden in Verfügbarkeit von Features, Qualität und Kostenmodell zur Verfügung. 
-Alle dieser Optionen sind kostenlos benutzbar, nachdem die Berechnung der 3D-Modelle aber erheblichen Rechenaufwand für den Anbieter erzeugt besteht oft eine Limitation der kostenlosen Aufnahmen, eine Obergrenze für die Anzahl an Fotos pro Aufnahme, oder begrenzte Export-Dateiformate, etc.
+Alle dieser Optionen sind kostenlos benutzbar, nachdem die Berechnung der 3D-Modelle aber erheblichen Rechenaufwand für den Anbieter erzeugt besteht oft eine Limitation der kostenlosen Aufnahmen, eine Obergrenze für die Anzahl an Fotos pro Aufnahme, oder begrenzte Export-Dateiformate, etc. (Einzige Ausnahme ist **Scaniverse**, dort wird die Modellrekonstruktion lokal berechnet - was jedoch hohe Rechenlast erzeugen kann und die finale Qualität einschränkt)
 <br><br>
 Alle Apps können je nach Smartphone über den Google Play Store oder den Apple App Store installiert werden.
 
@@ -250,11 +261,11 @@ Natürlich benötigen wir auch noch ein Objekt, von dem wir ein 3D-Modell erzeug
 
 * Auf der Oberfläche des Objekts müssen **Features** erkannt werden können
   
-  * d.h. große glatte & einfarbige Flächen eignen sich nicht gut für die Photogrammetrie
+  d.h. große glatte & einfarbige Flächen eignen sich nicht gut für die Photogrammetrie
 
 * Die erkennbaren **Features** müssen aus benachbarten Perspektiven wiedererkennbar sein
 
-  * d.h. transparente & reflektive Oberflächen, deren Aussehen stark blickwinkelabhängig ist sind ebenfalls nicht optimal
+  d.h. transparente & reflektive Oberflächen, deren Aussehen stark blickwinkelabhängig ist sind ebenfalls nicht optimal
 
 
 Eben diese Anforderungen stellen auch die größte Limitation der Photogrammetrie dar, mit spezieller Belichtung, Polfiltern oder Oberflächensprays kann diesen Problemen oft entgegengewirkt werden, dies ist jedoch mit zusätzlichem Aufwand verbunden und keine Garantie für Erfolg.
@@ -305,7 +316,7 @@ Eine leergeräumte Tischplatte reicht vorerst vollkommen als Hinter- bzw. Unterg
     <img src="res/capturing_slow.gif" alt="Der Aufnahmeprozess" style=""/>
     <p style="text-align:center"> *rudimentäre Aufnahme-Methodik* </p>
   </div>
-  Bei einfachen Objekten ist eine Gesamtaufnahme von ca. 40-50 Bildern (2 Ringe zu je 20-25 Bildern) bereits ein zuverlässiges Mindestmaß, spätestens 3-4 Ringe zu je 30-40 Bildern sind in den allermeisten Fällen vollkommen ausreichend.
+  Bei einfachen Objekten ist eine Gesamtaufnahme von ca. 40-50 Bildern (2 Ringe zu je 20-25 Bildern) bereits ein zuverlässiges Mindestmaß. Spätestens 3-4 Ringe zu je 30-40 Bildern sind in den meisten Fällen ausreichend.
 
   <img src="res/sfm.gif" alt="klassische ringweise Aufnahmestrategie" style="width:100%">
   <p style="text-align:center"> *beispielhaftes Photogrammetrie-Aufnahmemuster* </p>
@@ -322,6 +333,8 @@ Eine leergeräumte Tischplatte reicht vorerst vollkommen als Hinter- bzw. Unterg
   **Ich habe nicht genug Platz, um das Objekt zu umrunden?**
   <br>
   Fast alle Photogrammetrie-Apps unterstützen das sogenannte *Object Masking*, hierbei wird versucht das "Zielobjekt" der Aufnahme zu identifizieren und nachfolgend all **Features** abseits des Objektes ignoriert. Dadurch besteht praktisch kein Unterschied mehr zwischem einem "Herumlaufen" um das Objekt und einer schrittweisen Rotation des Objektes selbst. Achtung - bei weichen, deformierbaren Objekten besteht die Gefahr das Objekt zu verformen, hier empfiehlt sich ein Drehteller oder anderweitige Unterlage, mittels der das Objekt gedreht werden kann.
+
+  <!--- TODO: Kommentar 'Belichtung'?(MH) --->
 
   **So wird ja die Unterseite des Objektes garnicht gesehen!**
   <br>
@@ -351,7 +364,7 @@ Eine leergeräumte Tischplatte reicht vorerst vollkommen als Hinter- bzw. Unterg
 <p style="text-align:center"> Alles fertig?
 === </p>
 
-Sind alle gewünschten Blickwinkel auf das Objekt ausreichend abgedeckt, kann die Aufnahme schließlich beendet werden.
+Sind alle gewünschten Blickwinkel auf das Objekt ausreichend abgedeckt, kann die Aufnahme beendet werden.
 Abschließend kann noch die gewünschte Qualität des 3D-Modells (beeinflusst auch die Dateigröße! - am besten 'Medium' oder 'Full') eingestellt, und bei Bedarf das bereits erwähnte *Object Masking* aktiviert werden.
 
 <div style="overflow:auto">
@@ -391,25 +404,30 @@ Tipp: Polycam besitzt auch ein [Webinterface](https://poly.cam). Wenn ihnen ein 
 --->
 
 #### Origin<br>
-Der sogenannte *Origin* (= Ursprung) oder Mittelpunkt des Objektes liegt manchmal nicht im Zentrum der 3D-Szene.
-Dies ist ein eher seltenes Problem bei automatisierten Photogrammetrie-Pipelines und kann daher z.B. in Polycam nicht bearbeitet werden.
-Ein korrekt gesetzer *Origin* ist wichtig beim Import des Modells in andere Software.<br><br>
+Jedes 3D-Modell verfügt über einen sogenannte *Origin* (= Ursprung). Dieser stellt den Aufhängungspunkt und Rotationsmittelpunkt des Objektes dar, und ist insbesondere beim späteren Import des Modells in weiterer Software relevant.
+
+Problematisch ist insbesondere, wenn der *Origin* (weit) außerhalb des eigentlichen *Meshes* liegt.
+Für die optimale Position des *Origin* besteht jedoch keine feste Definition, er kann ja nach Nutzerpräferenz in den "Masseschwerpunkt", zentral auf die Bodenfläche des Objekts oder anhand gewünschter Rotationsachsen gesetzt werden.
+
+Automatisierte Photogrammetrie-Pipelines setzen den *Origin* meist automatisch auf den Mittelpunkt und erlauben darüber hinaus oft keine weitere Bearbeitung. Ist eine Bearbeitung erwünscht, muss zusätzliche Software (**Blender**, **MeshLab**) hinzugezogen werden.<br><br>
 
 <div>
     <img src="res/wrong_origin.gif" alt="Import eines Modells mit fehlerhaftem *Origin* in Blender" style="float:left;width:48%"/>
     <img src="res/right_origin.gif" alt="Import eines Modells mit korrigiertem *Origin* in Blender" style="float:right;width:48%"/>
     <div style="float:left;width:48%;text-align:center">
-      *Import eines 3D-Modells mit fehlerhaftem* Origin
+      *Import eines 3D-Modells mit fehlerhaftem* Origin (**Blender**)
     </div>
     <div style="float:right;width:48%;text-align:center">
-      *Import eines 3D-Modells mit korrigiertem* Origin
+      *Import eines 3D-Modells mit korrigiertem* Origin (**Blender**)
     </div>
 </div>
+
+<!--- TODO: add rotation of wrong origin model? --->
 
 #### Rotation<br>
 Ähnlich zum *Origin* ist auch die Orientierung des Objektes oft unerwartet im Verhältnis zu den Hauptachsen der 3D-Szene.
 Da die Software meist nicht von selbst feststellen kann, wo bspw. "oben" ist, wird die Rotation z.T. arbiträr gesetzt, dadurch entsteht unerwünschtes Verhalten beim Drehen und Bewegen des Objektes und beim Import in andere 3D-Software.<br>
-Hier gibt uns Polycam die Möglichkeit, das Objekt neu zu Orientieren. Dazu einfach unter **Rotate** das Objekt mittels der bunten "Anfasser" drehen, bis die gewünschte Orientierung im Bezug zu der Bodenfläche (graues Gitter) erreicht ist. Wird die Änderung angewendet, sollte ein merklich natürlicheres Rotationsverhalten bei Betrachtung zu beobachten sein.
+Hier gibt uns Polycam die Möglichkeit, das Objekt neu zu Orientieren. Dazu kann das Objekt unter **Rotate** mittels des bunten "Anfassers" gedreht werden, bis die gewünschte Orientierung im Bezug zu der Bodenfläche (graues Gitter) erreicht ist. Wird die Änderung angewendet, sollte ein merklich natürlicheres Rotationsverhalten zu beobachten sein.
 
 <div style="overflow:auto">
   <img style="float:left;width:30%;margin-right:5%;text-align:center;" src="res/rotation_wrong.gif" alt="">
@@ -433,16 +451,13 @@ Zur Korrektur können unter **Rescale** Punkte auf dem Modell ausgewählt werden
 #### Outlier<br>
 Als *Outlier* (= Ausreißer) versteht man bei 3D-Modellen einzelne Punkte, Kanten oder Flächen (die Grundbausteine eines *Meshes*), die nicht mit dem Hauptobjekt verbunden sind - diese Artefakte entstehen entweder aus falsch erkannten *Features* bei der Modellberechnung oder später bei der Umwandlung der Punktewolke zum *Mesh*. Eine grundlegendes *Outlier Removal* wird von den meisten Photogrammetrie-Apps standartmäßig durchgeführt. Darüber hinaus gibt es in Polycam keine manuelle Bearbeitungsmöglichkeit.
 
-<!---
-![Image?](res/outlier.png)
---->
 <img src="res/outlier.png" alt="fehlerhafte Rekonstruktion bei der Aufnahme einer Nike-Gipsstatuette" style="width:100%;margin-left:0%"/>
 <p style="text-align:center"> *Beispiel eines fehlerhaft rekonstruierten Objekts mit ****Outlier****-Artefakten (Blender)* </p>
 
 #### Hintergrund<br>
 Insbesondere bei der Photogrammetrie ohne *Object Masking* beinhaltet die rekonstruierte Szene meist noch Teile und Objekte des Hintergrundes (Tischplatte, Wände, zusätzliche Objekte).
 Sofern die Digitalisierung des gesamten Raumes bzw. der Gesamtszene jedoch nicht Ziel der Aufnahme war, ist es sinnvoll die Szene auf das gewünschte Objekt zu reduzieren.<br>
-Hierfür kann via **Crop** entweder eine Box oder ein Zylinder definiert und über die "Anfasser" angepasst werden, die ausschließlich das Objekt beinhalten, oder es werden über die **Crop Out** Option in mehreren Schritten einzelne unerwünschte Teile des Objektes weggeschnitten.<br><br>
+Hierfür kann via **Crop** entweder eine Box oder ein Zylinder definiert und über die "Anfasser" angepasst werden, die ausschließlich das Objekt beinhalten. Oder es werden über die **Crop Out** Option in mehreren Schritten einzelne unerwünschte Teile des Objektes weggeschnitten.<br><br>
 
 <img src="res/crop_fix.gif" alt="Object *Cropping* in Polycam" style="width:100%;margin-left:0%"/>
 <p style="text-align:center"> *Anwendung der ****Crop In****-Bearbeitung in Polycam </p>
@@ -461,23 +476,25 @@ Sind jedoch nur stellenweise unerwünschte Verfärbungen oder Hell-Dunkel-Wechse
 --->
 
 #### Geometrie-Auflösung/Dateigröße<br>
-Je nach weiterem Verwendungszweck bestehen oft sehr spezifische Anforderungen an die Detail-Auflösung der Geometrie oder die allgemeine Dateigröße.<br>
-Die Auflösung im Nachhinein zu erhöhen ist allerdings nur schwer möglich und erfordert eine Neuberechnung des Modells mit anderen Detaileinstellungen und/oder mehr bzw. besseren Aufnahmebildern.<br>
-Eine Reduktion der Auflösung/Dateigröße um beispielsweise das Datenlimit einer Webseite zu erfüllen ist jedoch in fast jeder Photogrammetrie-Software nachträglich möglich.
+Je nach Verwendungszweck des 3D-Modells bestehen oft sehr spezifische Anforderungen an den Detailgrad der Geometrie oder die allgemeine Dateigröße.<br>
+Die Auflösung zu erhöhen ist im Nachhinein nur schwer möglich und erfordert eine Neuberechnung des Modells mit anderen Detaileinstellungen und/oder mehr bzw. besseren Aufnahmebildern.<br>
+Eine Reduktion der Auflösung/Dateigröße um beispielsweise das Datenlimit einer Webseite zu erfüllen ist wiederum in fast jeder Photogrammetrie-Software nachträglich möglich.
 
 > *Hinweis - Dieses Bearbeitungsfeature ist ****nicht**** Teil der kostenlosen Features von Polycam!*<br><br>
-> *Für die Laienhafte Anwendung der Photogrammetrie und Weiterverwendung der Modelle ist eine Reduktion der Geometrie-Auflösung aber auch oft noch nicht notwendig - Der Bedarf besteht insbesondere bei sehr hochaufgelösten Modellen die nachfolgend für die Webpublikation optimiert werden sollen.*
+> *Für die laienhafte Anwendung der Photogrammetrie und Weiterverwendung der Modelle ist eine Reduktion der Geometrie-Auflösung aber meistens auch nicht notwendig - Der Bedarf besteht insbesondere bei sehr hochaufgelösten Modellen, die nachfolgend für die Webpublikation optimiert werden sollen.*
 > 
-> In Polycam kann unter **Remesh** ein expliziter Reduktionsfaktor oder eine gewünschte Polygonzahl (Anzahl einzelner Flächen im *Mesh*) angegeben werden. Die Einstellung **Uniform** sorgt dabei für eine gleichmäßige Reduktion der Auflösung über das *Mesh* hinweg, während bei **Adaptive** versucht wird, an detailreichen Stellen des Objektes hohe Auflösung zu bewahren und sie an detailärmeren Stellen ausgleichend stärker zu reduzieren.
-> Auch die Texturauflösung kann reduziert werden, der Einfluß auf die Dateigröße ist hier aber häufig geringer als im Falle der Geometrie.
+> In Polycam kann unter **Remesh** ein expliziter Reduktionsfaktor oder eine gewünschte Polygonzahl (Anzahl einzelner Flächen im *Mesh*) angegeben werden. Die Einstellung **Uniform** sorgt dabei für eine gleichmäßige Reduktion der Auflösung über das *Mesh* hinweg. Bei **Adaptive** wird versucht, an detailreichen Stellen des Objektes eine höhere Auflösung zu bewahren, während sie an detailärmeren Stellen im Ausgleich stärker reduziert wird.
+> Auch die Textur-Auflösung kann reduziert werden. Der Einfluß auf die Dateigröße ist aber häufig geringer als im Falle der Geometrie-Auflösung.
 
 <!---
 ![Image](res/edit_remesh.png)
 --->
 
 #### Textur- & Geometrie-Fehler<br>
-Treten bei der Rekonstruktion erkenntliche Fehler bei der Geometrie oder den Texturen auf, ist dies meist ein Indiz für schlechte Abdeckung der betreffenden Bereiche bei der Aufnahme, oder für problematisches Material (reflektive/transparente Objektteile). Durch einfache Nachbearbeitung ist dies kaum zu beheben, entweder müssen die fehlerhaften Bereiche in einem externen Programm manuell nachmodelliert werden, oder es wird eine Neuaufnahme versucht.
-Eine dritte Option besteht hier je nach Software noch in der Erweiterung der bisherigen Aufnahme um zusätzliche Bilder. Polycam bietet dazu die **Extend**-Option an, die einen zurück in den Aufnahmemodus versetzt, bei der Modellberechnung aber vorhergehende Bilder miteinbezieht.<br>
+Bei der Berechnung des 3D-Modells können können sowohl Geometrie als auch Texturen falsch rekonstruiert werden.
+Dies ist meist ein Indiz für schlechte Abdeckung der betreffenden Bereiche bei der Aufnahme oder für problematische Materialien (reflektive/transparente Objektteile). Durch einfache Nachbearbeitung ist dies kaum zu beheben, entweder müssen die fehlerhaften Bereiche in einem externen Programm manuell nachmodelliert werden, oder es wird eine Neuaufnahme versucht.
+
+Eine dritte Option besteht hier je nach Software noch in der Erweiterung der bisherigen Aufnahme um zusätzliche Bilder. Polycam bietet dazu die **Extend**-Option an. Diese versetzt den Nutzer zurück in den Aufnahmemodus, bei der Modellberechnung werden dann sowohl neue als auch vorhergehende Bilder miteinbezogen.<br>
 
 > *Hinweis - Die ****Extend****-Option ist nur in der Smartphone-App verfügbar, nicht im Webinterface von Polycam*
 
@@ -495,8 +512,8 @@ Eine dritte Option besteht hier je nach Software noch in der Erweiterung der bis
 </div>
 
 #### Dateiformat bei Export<br>
-Eine Weiterverwendung der Modells setzt selbstverständlich einen Export der Modelldatei voraus. Während eine nachträgliche Umwandlung zwischen Dateiformaten oft möglich ist, gehen in manchen Fällen bestimmte Informationen verloren.<br>
-Der Export in **Polycam** ist über das *Download*-Symbol zugänglich. Leider ist die Wahl des Exportformates in vielen Photogrammetrie-Apps ein kostenpflichtiges Feature - bei Polycam wird bspw. nur der Export als .glb/.gltf-Datei kostenfrei angeboten. Insbesondere für Weiterverwendung im Webkontext ist dieses Format inzwischen jedoch der de-facto Standart und kann problemlos für die Publikation des Objektes auf Webseiten oder Ähnlichem verwendet werden. 
+Eine Weiterverwendung des Modells setzt selbstverständlich einen Export der Modelldatei voraus. Während eine nachträgliche Umwandlung zwischen Dateiformaten oft möglich ist, gehen in manchen Formaten Informationen verloren.<br>
+Der Export in **Polycam** ist über das *Download*-Symbol zugänglich. Leider ist die Wahl des Exportformates in vielen Photogrammetrie-Apps ein kostenpflichtiges Feature - bei Polycam wird bspw. nur der Export als .glb/.gltf-Datei kostenfrei angeboten. Insbesondere für Weiterverwendung im Webkontext ist dieses Format inzwischen der de-facto Standart und kann problemlos für die Publikation des Objektes auf Webseiten oder Ähnlichem verwendet werden. 
 
 <img src="res/polycam_export.png" alt="Übersicht der Export-Dateiformate von Polycam">
 <p style="text-align:center"> *Kostenlos können in **Polycam** nur das Mesh im *.glb/.gltf*-Format sowie die aufgenommene Bilderserie heruntergeladen werden.* </p>
@@ -514,9 +531,9 @@ Wir betrachten im Folgenden daher die Publikation von 3D-Modellen auf **Sketchfa
 #### Weiterverwendung von 3D-Modellen
 
 Nach der Erzeugung und erfolgreichen Nachbearbeitung kann und soll das 3D-Modell nun auch verwendet werden. 
-Die genaue Art und Weise der Nutzung sollte natürlich sofern möglich im Vorhinein geplant sein, da Aufnahmesetup & -qualität sowie die Nachbearbeitung für die Weiternutzung optimiert werden müssen.
+Die genaue Art und Weise der Nutzung sollte sofern möglich im Vorhinein geplant sein, da Aufnahmesetup & -qualität sowie die Nachbearbeitung für die Weiternutzung optimiert werden müssen.
 
-In unserem Fall wollen wir das Modell einfach nur öffentlich zur Verfügung stellen, ohne eine eigene Webseite oder eigene Serverkapazitäten aufwenden zu müssen. Daher fällt auch hier die Wahl hier wieder auf einen Webanbieter.
+In unserem Fall wollen wir das Modell öffentlich zur Verfügung stellen, ohne eine eigene Webseite oder eigene Serverkapazitäten aufwenden zu müssen. Daher fällt auch hier die Wahl wieder auf einen Webanbieter.
 Die bekanntesten Optionen zur Zeit sind Sketchfab, ein allgemeiner Markt- & Austauschplatz für 3D-Modelle mit sehr großem Publikum aber leider noch ungeklärter Zukunft, sowie kompakkt, eine kleinere, nicht-kommerzielle Alternative, die allerdings mit Fokus auf Digital Humanities-Bedarfe entwickelt wurde.
 
 Aufgrund der Popularität von **Sketchfab**, und da neue **kompakkt**-Nutzer die Uploadfunktion erst manuell von Seiten der Betreiber genehmigt bekommen müssen, werden wir uns für dieses Tutorial an **Sketchfab** halten, der Uploadprozess beider Seiten ähnelt sich jedoch stark.
@@ -525,24 +542,25 @@ Aufgrund der Popularität von **Sketchfab**, und da neue **kompakkt**-Nutzer die
 
 [Sketchfab](sketchfab.com) ist ein Webportal zum Austausch und Verkauf von 3D-Modellen jeglicher Art. Während die längerfristige Zukunft von Sketchfab derzeit noch ungeklärt ist (bevorstehende Migration auf das kommerzieller orientierte [FAB](https://fab.com)), hat sich hier bereits ein reicher Schatz an Kulturerbe-Digitalisaten angesammelt ([Kulturerbe-Inhalte](https://sketchfab.com/3d-models/categories/cultural-heritage-history) auf Sketchfab).
 
-Auch Sketchfab erwartet vor der Nutzung wieder eine kostenlose Registrierung von seinen Nutzern. Nach Mail-Verifikation, optionaler Profileinrichtung und Wahl des Abonnements (kein kostenpflichtiges Abo notwendig!) kann auch schon direkt losgelegt werden. Nach Wahl der **Upload**-Option kann denkbar einfach über den Dateibrowser oder direktes Drag-and-Drop das gewünschte 3D-Modell ausgewählt werden.
+Auch Sketchfab erwartet vor der Nutzung wieder eine kostenlose Registrierung von seinen Nutzern. Nach Mail-Verifikation, optionaler Profileinrichtung und Wahl des Abonnements (kein kostenpflichtiges Abo notwendig!) kann direkt losgelegt werden. Nach Wahl der **Upload**-Option kann über den Dateibrowser oder Drag-and-Drop das gewünschte 3D-Modell ausgewählt werden.
 
 ![Image](res/sketchfab_upload.gif)
 
-Nach Auswahl der Datei öffnet sich direkt das Bearbeitungsmenü des neuen Eintrags, bis das Modell selbst geladen ist und testweise betrachtet werden kann braucht es noch einen Moment Geduld.
+Nach Auswahl der Datei öffnet sich das Bearbeitungsmenü des neuen Eintrags. Bis das Modell selbst geladen ist und testweise betrachtet werden kann braucht es meist noch einen Moment Geduld.
 
 ![Image](res/sketchfab_pick_file.gif)
 
-Ist das Modell fertig geladen, kann nun es nun auch über das kleine Viewer-Fenster betrachtet werden oder direkt über die Option **Edit 3D Settings** nachmals bearbeitet werden.
-Da **Sketchfab** einen anderen *Renderer* (= 3D-Darstellungsprogramm) als **Polycam** verwendet, sehen viele Objekte erstmal anders aus. Standartmäßig wird die Beleuchtung hier einem industriellen Innenraum nachempfunden, wem dies nicht gefällt, der kann die Beleuchtung entweder manuell nach Wunsch einstellen (Lampen-Symbol), oder auf eine Beleuchtungssimulation verzichten und durch die **Shadeless**-Option die ungefilterte Darstellung der rekonstruierten Objektfarben erzwingen.
+Ist das Modell fertig geladen, kann es über das kleine Viewer-Fenster betrachtet werden oder direkt über die Option **Edit 3D Settings** nochmals bearbeitet werden.
+Da **Sketchfab** einen anderen *Renderer* (= 3D-Darstellungsprogramm) als **Polycam** verwendet, sehen viele Objekte erstmal anders aus. Standartmäßig wird die Beleuchtung hier einem industriellen Innenraum nachempfunden. Setzt diese Beleuchtung das Objekt nicht angemessen in Szene, kann die Beleuchtung entweder manuell nach Wunsch eingestellt werden (Lampen-Symbol), oder auf die Beleuchtungssimulation verzichtet und durch die **Shadeless**-Option die ungefilterte Darstellung der rekonstruierten Objektfarben erzwungen werden.
 
 ![Image](res/sketchfab_lighting.gif)
 
-Ist die Sichtbarkeit durch den Hintergrund behindert, kann auch dieser hier angepasst werden, sowie ein vorteilhafte initiale Kameraposition definiert werden und viele weitere Änderungen, um das Objekt von seiner besten Seite zu präsentieren. 
+Ist die Sichtbarkeit durch den Hintergrund behindert, kann auch dieser hier angepasst werden. 
+Um das Objekt von seiner besten Seite zu präsentieren, kann, neben vielen weiteren Änderungen, auch eine vorteilhafte initiale Kameraposition definiert werden.
 Um das Objekt rein zur interessierten Betrachtung zu Veröffentlichen ist an dieser Stelle aber auch kein großer Aufwand erforderlich.
 <br>
-Relevante Einstellungen sind weiterhin die Sichtbarkeit (Bei kostenfreier Nutzung zwangsweise "öffentlich") und ob anderen Nutzern die Möglichkeit zum Download des Modells gegeben werden soll sowie die entsprechende Lizenzierung.
-Nach Wahl passenden Titels und einer (optionalen) kurzen Beschreibung kann das Modell dann auch schon mit einem Klick auf **Publish** veröffentlicht werden!
+Relevante Einstellungen sind zudem die Sichtbarkeit (Bei kostenfreier Nutzung zwangsweise "öffentlich") und  unter welcher Lizenzierung (falls überhaupt) das Modell anderen Nutzern zum Download zur Verfügung gestellt werden soll.
+Nach Wahl eines passenden Titels und einer (optionalen) kurzen Beschreibung kann das Modell mit einem Klick auf **Publish** veröffentlicht werden!
 
 ![Image](res/sketchfab_publish.gif)
 
@@ -569,15 +587,15 @@ Folgende Kriterien können beispielsweise ausschlaggebend sein:
 > 
 > - Dürfen die Daten auf öffentliche/kommerzielle Server gelangen? -> **Sketchfab**, **kompakkt**, **Zenodo**
 > 
-> - Sollen die Daten im eigenen Haus bleiben und selbst gehostet werden? -> Open-Source Viewer wie **modelviewer.js** oder **Smithsonian Voyager** können problemlos in eigene Webauftritte integriert werden, ohne die 3D-Daten aus der eigenen Hand zu geben
+> - Sollen die Daten im eigenen Haus bleiben und selbst gehostet werden? -> Open-Source Viewer wie **modelviewer.js** oder **Smithsonian Voyager** können in eigene Webauftritte integriert werden, ohne die 3D-Daten aus der eigenen Hand zu geben
 
 > ***Technische Kapazität***<br>
 > 
-> - Reiner Endnutzer? -> fertige, alleinstehende Produkte wie **Sketchfab** und **Smithsonian Voyager** sind bereits ohne technisches Vorwissen leicht zu verwenden
+> - Reiner Endnutzer? -> fertige, alleinstehende Produkte wie **Sketchfab** und **Smithsonian Voyager** sind auch ohne technisches Vorwissen leicht zu verwenden
 > 
 > - Mittlere IT-Kapazitäten? -> Viewer wie **Smithsonian Voyager** oder **modelviewer.js** können schnell an spezifische Anwendungszwecke angepasst werden
 > 
-> - Große IT-Kompetenzen/IT-Abteilung? -> Auf Basis von **three.js** oder sogar dem darunterliegenden **WebGL** können vollkommen frei 3D-Webanwendungen entwickelt werden
+> - Große IT-Kompetenzen/IT-Abteilung? -> Auf Basis von **three.js** oder sogar dem darunterliegenden **WebGL** können arbiträre 3D-Webanwendungen entwickelt werden
 
 
 
