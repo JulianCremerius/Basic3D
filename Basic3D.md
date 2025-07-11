@@ -61,7 +61,7 @@ Um an die entsprechende Methodik heranzuführen und zur 3D-Digitalisierung zu mo
 
 - Das Konzept und die Algorithmik hinter der 3D-Digitalisierung mittels Photogrammetrie zu verstehen
 - Mit den grundlegenden Arbeitsschritten und Prozessen der 3D-Digitalisierung bekannt zu werden
-- Einen Ansatzpunkt & Motivation zu bekommen um in Zukunft auch selbst Photogrammetrie einzusetzen
+- Einen Ansatzpunkt & Motivation zu bekommen, um in Zukunft auch selbst Photogrammetrie einzusetzen
 - Interesse zu wecken und Ausblicke geben, um Photogrammetrie nicht nur Einzusetzen, sondern auch in Zukunft weiter zu Vertiefen und den eigenen Arbeitsprozess modular zu verbessern
   
 Diese Lernressource ist nicht an Leute gerichtet, die in ihrem Arbeitsalltag bereits erfolgreich und routiniert 3D-Digitalisate erschaffen.
@@ -83,12 +83,12 @@ Aus diesem Grund präsentieren und besprechen wir zu beiden Programmen Alternati
 <img src="res/sketchfab-logo-text.png" alt="" style="float:right;width:30%;margin-bottom:20px">
 Es besteht weder eine Kooperation mit den verwendeten Diensten eine kommerzielle Empfehlung der Dienste unsererseits. Die Festlegung auf spezifische Dienste dient ausschließlich der konsistenten Darstellung von spezifischen Anwendungsbeispielen.<br> 
 Grund für die Wahl der betreffenden Software ist unser primäres Ziel der Bekanntmachung & Vorstellung der Methodik.
-Da es sich dementsprechend um ein Einsteiger- und Ausprobier-Tutorial handelt sollen keine Kosten & minimaler Aufwand hervorgerufen werden (reine Open-Source Software ist häufig Einarbeitunsintensiv).
+Da es sich dementsprechend um ein Einsteiger- und Ausprobier-Tutorial handelt, sollen keine Kosten & minimaler Aufwand hervorgerufen werden (reine Open-Source Software ist häufig Einarbeitungsintensiv).
 Um weiterhin keine Anforderungen im Bezug auf teure & leistungsfähige Hardware zu stellen, beschränken wir uns auf Smartphone-Apps & Web-Apps, die auf jedem mobilen Gerät verwendet werden können.
 <br> 
 Wir hoffen, durch unsere Wahl einen reibungslosen Ablauf und schnelle Erfolge bereiten zu können, unterstützen aber jederzeit die Wahl alternativer Software.<br><br>
 
-> *Hinweis - Es handelt sich bei beiden Softwares um ****Cloud****-basierte Dienste, die im Zuge der Photogrammetrie aufgenommenen Bilder sowie das resultierende Modell werden an externe Server übermittelt. Vorteil des Nutzers ist in diesem Falle, nicht die Rechenleistung für die Rekonstruktion stellen zu müssen und bei späterer Webpublikation eine dauerhafte Verfügbarkeit des Modells garantieren zu können. Es sollte aber vermieden werden, vertrauliche Daten & Aufnahmen derartig zu verarbeiten.*
+> *⚠️ Hinweis - Es handelt sich bei beiden Softwares um ****Cloud****-basierte Dienste, die im Zuge der Photogrammetrie aufgenommenen Bilder sowie das resultierende Modell werden an externe Server übermittelt. Vorteil des Nutzers ist in diesem Falle, nicht die Rechenleistung für die Rekonstruktion stellen zu müssen und bei späterer Webpublikation eine dauerhafte Verfügbarkeit des Modells garantieren zu können. Es sollte aber vermieden werden, vertrauliche Daten & Aufnahmen derartig zu verarbeiten.*
 
 
 
@@ -218,6 +218,7 @@ Nachdem das *Mesh* berechnet wurde und die Texturen darauf projiziert wurden, er
 <!--- TODO: subtitles with explanation--->
 
 ---
+
 <br><br>
 **********
 
@@ -249,7 +250,7 @@ Alle Apps können je nach Smartphone über den Google Play Store oder den Apple 
 | Scaniverse:  | [Android](https://play.google.com/store/apps/details?id=com.nianticlabs.scaniverse&hl=en) |    [iOS](https://apps.apple.com/de/app/scaniverse-3d-scanner/id1541433223)     |
 
 
-Nach Installation der gewählten App ist in den meisten Fällen auch die Registrierung eines Benutzerkontos nötig - das Abschließen eines kostenpflichtigen Abos ist jedoch bei keiner dieser Apps notwendig! Das Tutorial kann mit den kostenlos verfügbaren Features durchgeführt werden.
+Nach Installation der gewählten App ist in den meisten Fällen auch die Registrierung eines Benutzerkontos nötig - **das Abschließen eines kostenpflichtigen Abos ist jedoch bei keiner dieser Apps notwendig!** Das Tutorial kann mit den kostenlos verfügbaren Features durchgeführt werden.
 
 #### Vorbereitung - Objekt & Umgebung
 
@@ -265,7 +266,7 @@ Natürlich benötigen wir auch noch ein Objekt, von dem wir ein 3D-Modell erzeug
 
 * Die erkennbaren **Features** müssen aus benachbarten Perspektiven wiedererkennbar sein
 
-  d.h. transparente & reflektive Oberflächen, deren Aussehen stark blickwinkelabhängig ist sind ebenfalls nicht optimal
+  d.h. transparente & stark reflektive Oberflächen, deren Aussehen stark blickwinkelabhängig ist sind ebenfalls nicht optimal
 
 
 Eben diese Anforderungen stellen auch die größte Limitation der Photogrammetrie dar, mit spezieller Belichtung, Polfiltern oder Oberflächensprays kann diesen Problemen oft entgegengewirkt werden, dies ist jedoch mit zusätzlichem Aufwand verbunden und keine Garantie für Erfolg.
@@ -276,7 +277,7 @@ II. Umgebung
 
 Der wichtigste Umgebungsfaktor für die Aufnahme besteht in der Beleuchtung unserer Szene - je geringer der direkte Lichteinfall ist, desto besser. Gleichzeitig soll das Objekt natürlich ausreichend beleuchtet sein, um gut erkannt und abgebildet zu werden. Das Optimum besteht in einer diffusen, gleichmäßigen Ausleuchtung des Raumes ohne direkte "Lichtbestrahlung". Bei 3D-Aufnahmen im Freien eignen sich insbesondere helle, aber bedeckte Tage, in geschlossenen Räumen werden bestenfalls sogennante *Softboxen* oder Fotozelte verwendet. Zum Zwecke dieses Tutorials reicht es allerdings vollkommen aus, das Objekt nicht zu direkt "anzustrahlen".
 <br><br>
-Eine leergeräumte Tischplatte reicht vorerst vollkommen als Hinter- bzw. Untergrund für die Aufnahme. Stark gefüllte & bunte Hintergründe können in manchen Fällen zur Fehlerquelle werden (Führt zu vielen zusätzlichen Features im Hintergrund -> Gut für die Orientierung der Kameras, kann aber die Objektrekonstruktion stören).<br><br>
+Eine leergeräumte Tischplatte reicht vorerst absolut als Hinter- bzw. Untergrund für die Aufnahme aus. Stark gefüllte & bunte Hintergründe können in manchen Fällen zur Fehlerquelle werden (Führt zu vielen zusätzlichen Features im Hintergrund -> Gut für die Orientierung der Kameras, kann aber die Objektrekonstruktion stören).<br><br>
 
 <div>
     <img src="res/setup_minimal.JPG" alt="Minimales Photogrammetrie-Setup" style="float:left;width:48%"/>
@@ -306,8 +307,8 @@ Eine leergeräumte Tischplatte reicht vorerst vollkommen als Hinter- bzw. Unterg
 
   Ist alles vorbereitet kann es nun an die eigentliche Aufnahme gehen.
   <br>
-  Öffnet man **Polycam**, wird man direkt mit dem Aufnahme-Interface begrüßt, bei manchen anderen Apps muss manuell eine **Neue Aufnahme/New Capture** geöfnet werden.
-  Die einzige verfügbare Einstellung ist hier die Auswahl zwischen der Aufnahme einzelner Photos ('Manual') und der "Video"-Aufnahme ('Auto'). Um die Aufnahme verwackelter Bilder während der Bewegung bzw Umpositionierung zu vermeiden empfiehlt sich hier die manuelle Aufnahme.
+  Öffnet man **Polycam**, wird man direkt mit dem Aufnahme-Interface begrüßt, bei manchen anderen Apps muss manuell eine **Neue Aufnahme/New Capture** geöffnet werden.
+  Die einzige verfügbare Einstellung ist hier die Auswahl zwischen der Aufnahme einzelner Photos ('Manual') und der "Video"-Aufnahme ('Auto'). Um die Aufnahme verwackelter Bilder während der Bewegung bzw. Umpositionierung zu vermeiden, empfiehlt sich hier die manuelle Aufnahme.
 
   Das einfachste "Aufnahmemuster", um eine gute Abdeckung zu erreichen ist das kreisförmige Umrunden des Objekts bei regelmäßigem Fotografieren, beispielsweise alle 10-20° (~20 Bilder/Umrundung) oder frei Hand nach jedem "Seitwärtsschritt"(siehe Abbildung).
   Um die Abdeckung weiterhin zu verbessern werden diese Umrundungen auf verschiedenen Höhen wiederholt (min. 2-3 mal; z.B. eine Umrundung je auf Augenhöhe/Brusthöhe/Hüfthöhe, angepasst an Objekt- und Tischgröße natürlich).
@@ -338,7 +339,7 @@ Eine leergeräumte Tischplatte reicht vorerst vollkommen als Hinter- bzw. Unterg
 
   **So wird ja die Unterseite des Objektes garnicht gesehen!**
   <br>
-  Richtig, auch hier kann aber das *Object Masking* helfen. Solide Objekte können dabei beliebig umgedreht, hingelegt und rotiert werden, ohne die Rekonstruktion zu beeinträchtigen. Dadurch kann auch die Unterseite mit aufgenommen werden. Dies gestaltet sich bei deformierbaren Objekten jedoch schwierig, Option ist hier das Aufhängen oder anderweitige Suspendieren in der Luft, um auch Fotoringe von unterhalb aufnehmen zu können.
+  Richtig, auch hier kann aber das *Object Masking* helfen. Solide Objekte können dabei beliebig umgedreht, hingelegt und rotiert werden, ohne die Rekonstruktion zu beeinträchtigen. Dadurch kann auch die Unterseite mit aufgenommen werden. Dies gestaltet sich bei deformierbaren Objekten jedoch schwierig, Option ist hier das Aufhängen oder anderweitige Suspendieren in der Luft, um auch kreisförmige Photo Aufnahmen von unterhalb aufnehmen zu können.
 
   <div style="overflow:auto">
     <div style="float:left;width:48%;">
@@ -381,7 +382,7 @@ Abschließend kann noch die gewünschte Qualität des 3D-Modells (beeinflusst au
     </div>
   </div>
 
-Da die Erstellung des 3D-Modells sehr rechenintensiv ist, wird der Prozess nicht lokal auf dem Smartphone gestartet. Stattdessen verwenden alle Photogrammetrie-Apps an dieser Stelle *Cloud Computing*, wobei die aufgenommenen Bilder an einen Server geschickt werden, der die Berechnung übernimmt (WLAN verwenden um übermäßigen Datenverbrauch zu vermeiden). Klassischerweise ergibt sich daraus eine Wartezeit von ca. 5-10 Minuten, bis das fertige Objekt in der Projekt-Gallerie der App betrachtet werden kann.
+Da die Erstellung des 3D-Modells sehr rechenintensiv ist, wird der Prozess nicht lokal auf dem Smartphone gestartet. Stattdessen verwenden alle Photogrammetrie-Apps an dieser Stelle *Cloud Computing*, wobei die aufgenommenen Bilder an einen Server geschickt werden, der die Berechnung übernimmt (WLAN verwenden, um übermäßigen Datenverbrauch zu vermeiden). Klassischerweise ergibt sich daraus eine Wartezeit von ca. 5-10 Minuten, bis das fertige Objekt in der Projekt-Gallerie der App betrachtet werden kann.
 
 <br><br><br>
 ***Erfolg! - Schon haben wir ein erstes eigenes 3D-Modell erzeugt!***
@@ -393,11 +394,11 @@ Ein wichtiger Schritt bei der Erzeugung hochwertiger 3D-Digitalisate besteht in 
 Je nach Verwendungszweck kann die Nachbearbeitung im "Low-End"- & Hobbybereich der Photogrammetrie noch recht knapp ausfallen, unter anderem weil viele Photogrammetrie-Apps bereits einige automatisierte Nachbearbeitungsschritte durchführen. Bei höheren Qualitätsansprüchen und der Notwendigkeit für individuelle Nachbearbeitung steigt dieser Aufwand jedoch schnell.
 <br><br>
 Auch wenn das erzeugte Modell auf den ersten Blick gut rekonstruiert scheint, gibt es noch einige Anhaltspunkte, die geprüft und bei Bedarf nachgebessert werden sollten, um das Digitalisat weiterverwendbar zu machen.
-Die häufigsten Problemfälle & Optimierungsmöglichkeiten und wie wir mit ihnen umgehen können wollen wir uns jetzt genauer anschauen.
+Die häufigsten Problemfälle & Optimierungsmöglichkeiten und wie wir mit ihnen umgehen können, wollen wir uns jetzt genauer anschauen.
 
 Um das Objekt genauer zu betrachten und zu verändern, wählen wir es aus der Projektgallerie aus und kommen dadurch in das Bearbeitungsmenü.
 
-Tipp: Polycam besitzt auch ein [Webinterface](https://poly.cam). Wenn ihnen ein Desktop-PC oder Laptop zur Verfügung steht haben sie auch dort Zugriff auf alle bereits an den Server übermittelten Projekte. Die Nachbearbeitung ist hierüber meist angenehmer als über einen Smartphone-Touchscreen.
+💡 **Tipp:** Polycam besitzt auch ein [Webinterface](https://poly.cam). Wenn ihnen ein Desktop-PC oder Laptop zur Verfügung steht, haben sie auch dort Zugriff auf alle bereits an den Server übermittelten Projekte. Die Nachbearbeitung ist hierüber meist angenehmer als über ein Smartphone-Touchscreen.
 
 <!---
 ![Image](res/edit_mode.png)
@@ -478,9 +479,9 @@ Sind jedoch nur stellenweise unerwünschte Verfärbungen oder Hell-Dunkel-Wechse
 #### Geometrie-Auflösung/Dateigröße<br>
 Je nach Verwendungszweck des 3D-Modells bestehen oft sehr spezifische Anforderungen an den Detailgrad der Geometrie oder die allgemeine Dateigröße.<br>
 Die Auflösung zu erhöhen ist im Nachhinein nur schwer möglich und erfordert eine Neuberechnung des Modells mit anderen Detaileinstellungen und/oder mehr bzw. besseren Aufnahmebildern.<br>
-Eine Reduktion der Auflösung/Dateigröße um beispielsweise das Datenlimit einer Webseite zu erfüllen ist wiederum in fast jeder Photogrammetrie-Software nachträglich möglich.
+Eine Reduktion der Auflösung/Dateigröße, um beispielsweise das Datenlimit einer Webseite zu erfüllen, ist wiederum in fast jeder Photogrammetrie-Software nachträglich möglich.
 
-> *Hinweis - Dieses Bearbeitungsfeature ist ****nicht**** Teil der kostenlosen Features von Polycam!*<br><br>
+> ⚠️ *Hinweis - Dieses Bearbeitungsfeature ist ****nicht**** Teil der kostenlosen Features von Polycam!*<br><br>
 > *Für die laienhafte Anwendung der Photogrammetrie und Weiterverwendung der Modelle ist eine Reduktion der Geometrie-Auflösung aber meistens auch nicht notwendig - Der Bedarf besteht insbesondere bei sehr hochaufgelösten Modellen, die nachfolgend für die Webpublikation optimiert werden sollen.*
 > 
 > In Polycam kann unter **Remesh** ein expliziter Reduktionsfaktor oder eine gewünschte Polygonzahl (Anzahl einzelner Flächen im *Mesh*) angegeben werden. Die Einstellung **Uniform** sorgt dabei für eine gleichmäßige Reduktion der Auflösung über das *Mesh* hinweg. Bei **Adaptive** wird versucht, an detailreichen Stellen des Objektes eine höhere Auflösung zu bewahren, während sie an detailärmeren Stellen im Ausgleich stärker reduziert wird.
@@ -496,7 +497,7 @@ Dies ist meist ein Indiz für schlechte Abdeckung der betreffenden Bereiche bei 
 
 Eine dritte Option besteht hier je nach Software noch in der Erweiterung der bisherigen Aufnahme um zusätzliche Bilder. Polycam bietet dazu die **Extend**-Option an. Diese versetzt den Nutzer zurück in den Aufnahmemodus, bei der Modellberechnung werden dann sowohl neue als auch vorhergehende Bilder miteinbezogen.<br>
 
-> *Hinweis - Die ****Extend****-Option ist nur in der Smartphone-App verfügbar, nicht im Webinterface von Polycam*
+> ⚠️ *Hinweis - Die ****Extend****-Option ist nur in der Smartphone-App verfügbar, nicht im Webinterface von Polycam*
 
 <br>
 
@@ -557,7 +558,7 @@ Da **Sketchfab** einen anderen *Renderer* (= 3D-Darstellungsprogramm) als **Poly
 
 Ist die Sichtbarkeit durch den Hintergrund behindert, kann auch dieser hier angepasst werden. 
 Um das Objekt von seiner besten Seite zu präsentieren, kann, neben vielen weiteren Änderungen, auch eine vorteilhafte initiale Kameraposition definiert werden.
-Um das Objekt rein zur interessierten Betrachtung zu Veröffentlichen ist an dieser Stelle aber auch kein großer Aufwand erforderlich.
+Um das Objekt rein zur interessierten Betrachtung zu Veröffentlichen, ist an dieser Stelle aber auch kein großer Aufwand erforderlich.
 <br>
 Relevante Einstellungen sind zudem die Sichtbarkeit (Bei kostenfreier Nutzung zwangsweise "öffentlich") und  unter welcher Lizenzierung (falls überhaupt) das Modell anderen Nutzern zum Download zur Verfügung gestellt werden soll.
 Nach Wahl eines passenden Titels und einer (optionalen) kurzen Beschreibung kann das Modell mit einem Klick auf **Publish** veröffentlicht werden!
@@ -577,11 +578,11 @@ Folgende Kriterien können beispielsweise ausschlaggebend sein:
 
 > ***Verwendungszweck***<br>
 > 
-> - Datenspeicherung und öffentliche Verfügbarkeit? -> Forschungsdatenportale wie das vom CERN gehostete **Zenodo** bieten sich an
+> - Datenspeicherung und öffentliche Verfügbarkeit? -> Forschungsdatenportale wie das vom CERN gehostete [**Zenodo**](https://zenodo.org/) bieten sich an
 > 
-> - Reine Webbetrachtung? -> Einfache Web-Viewer wie von **Sketchfab**, **kompakkt** oder **modelviewer.js** reichen aus
+> - Reine Webbetrachtung? -> Einfache Web-Viewer wie von [**Sketchfab**](https://sketchfab.com/), [**kompakkt**](https://www.kompakkt.de/) oder [**modelviewer.js**](https://modelviewer.dev/) reichen aus
 > 
-> - Storytelling und kuratierte Zusatzinformation? -> für den Heritage-Sektor optimierte Viewer wie der **Smithsonian Voyager** bieten Lösungen
+> - Storytelling und kuratierte Zusatzinformation? -> für den Heritage-Sektor optimierte Viewer wie der [**Smithsonian Voyager**](https://smithsonian.github.io/dpo-voyager/) bieten Lösungen
 
 > ***Ort der Datenspeicherung***<br>
 > 
