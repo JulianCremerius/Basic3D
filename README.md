@@ -1,3 +1,5 @@
+Deprecated original copy of the now [migrated repo](https://github.com/soda-collections-objects-data-literacy/SODa_3D_SfM_Intro).
+
 This Repo deploys a LiaScript-based Open Educational Ressource for public use.
 The resource is best viewed via the LiaScript-Renderer.
 
